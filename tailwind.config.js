@@ -1,17 +1,55 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      animation: {
+        'fade-in': 'fadeIn 1s ease forwards',
+        'fade-out': 'fadeOut 0.5s ease forwards',
       },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'fade-out': {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
+      screens: {
+        tablette: { max: '1023px' },
+        mobile: { max: '639px' },
+      },
+      colors: {
+        background: '#F4F4F4',
+        backgroundDark: '#0A0A0A',
+        secondary: '#CFDDEE',
+        secondaryDark: '#112031',
+        tertinary: '#366271',
+        tertinaryDark: '#6e9ac9',
+        borderColor: '#AAC6E5',
+        borderColorDark: '#2D4484',
+        textColor: '#123456',
+        textColorDark: '#ABCCED',
+        orange: '#FFA600',
+      },
+      fontFamily: {
+        titleFont: ['Roboto', 'sans-serif'],
+        textFont: ['Open Sans', 'sans-serif'],
+      },
+      borderRadius: {
+        '4xl': '3.5rem',
+      },
+    },
+    container: {
+      center: true,
+    },
+  },
+  variants: {
+    extend: {
+      scale: ['active'],
+      transform: ['active'],
     },
   },
   plugins: [],
