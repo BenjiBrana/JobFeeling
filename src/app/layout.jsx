@@ -1,7 +1,9 @@
 import './globals.css';
+import Head from 'next/head';
 import React from 'react';
 import Header from '@/components/Header/Header';
 import FilAriane from '@/components/FilAriane/FilAriane';
+import ArrowTop from '@/components/ArrowTop/ArrowTop';
 
 export const metadata = {
   title: 'JobFeeling',
@@ -12,9 +14,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body>
+      <Head>
+        <link rel="canonical" href="https://ccp1-brana.vercel.app/" />
+      </Head>
+      <body id="top">
         <Header />
         <FilAriane />
+        <ArrowTop />
         {children}
       </body>
     </html>

@@ -4,8 +4,9 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Header() {
+  /* indique si menu ouvert (fermer par defaut)*/
   const [menuOpen, setMenuOpen] = useState(false);
-
+  /* Si élément cliquer, défilement jusqu'à l'encre cible */
   function handleMenuItemClick(targetId) {
     const targetElement = document.getElementById(targetId);
 
@@ -16,7 +17,7 @@ export default function Header() {
       toggleMenu();
     }
   }
-
+  /* Empeche le défilement si le menu est ouvert */
   function toggleMenu() {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
@@ -25,7 +26,7 @@ export default function Header() {
       document.body.classList.remove('overflow-hidden');
     }
   }
-
+  /* Gestionnaire d'évenement au clique sur un élément du menu */
   useEffect(() => {
     const itemMenus = document.querySelectorAll('.itemMenu');
 
@@ -56,16 +57,15 @@ export default function Header() {
   ];
 
   return (
-    <header className="flex items-center px-16 shadow-md  justify-between relative border-b border-borderColor  font-textFont text-textColor bg-secondary">
-      <div className="py-4 cursor-pointer">
+    <header className="flex items-center px-16 shadow-xl shadow-backgroundDark w-full justify-between tablette:px-8 mobile:px-0 relative border-b border-borderColor  font-textFont text-textColor bg-secondary">
+      <div className=" cursor-pointer transition-all hover:scale-110">
         <Link href="/">
           <Image
-            className="imgCircle tablette:w-1/2 mobile:w-1/3  "
-            src="/logo_jobfeeling_mini.webp"
+            src="/images/jobfeeling_mini.webp"
             alt="Logo JobFeeling"
             title="Logo officiel de JobFeeling"
-            width={64}
-            height={64}
+            width={80}
+            height={80}
           />
         </Link>
       </div>
@@ -78,7 +78,9 @@ export default function Header() {
       >
         <ul
           className={`flex  ${
-            menuOpen ? 'h-screen flex-col' : 'auto flex-row'
+            menuOpen
+              ? 'h-screen flex flex-col'
+              : 'auto flex-row tablette:hidden'
           } items-center gap-6 w-full justify-evenly tablette:justify-center`}
         >
           {items.map((item) => (
@@ -139,7 +141,7 @@ export default function Header() {
           ) : (
             <Image
               id="menuIcon"
-              className=" h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 rounded-full p-1 shadow-lg shadow-black mobile:h-6 mobile:w-6  "
+              className=" h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 rounded-full p-1 shadow-lg shadow-black"
               src="/logo/burger_menu.svg"
               alt="Logo burger menu"
               title="Logo pour ouvrir le menu"

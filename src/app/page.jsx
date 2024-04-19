@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 import Image from 'next/image';
+import ImgPrincipal from '@/components/ImgPrincipal/ImgPrincipal';
 
 export default function Page({ children }) {
   useEffect(() => {
@@ -31,19 +32,8 @@ export default function Page({ children }) {
   }, []);
 
   return (
-    <main>
-      <div className="arrowTop">
-        <a href="#top" aria-label="Retour au début de la page">
-          <Image
-            src="/logo/arrow_up.svg"
-            alt="Logo flèche vers le haut"
-            title="Logo pour retourner en haut de la page"
-            width={25}
-            height={25}
-          />
-        </a>
-      </div>
-
+    <main className="w-full">
+      <ImgPrincipal />
       {children}
     </main>
   );
