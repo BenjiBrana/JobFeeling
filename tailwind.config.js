@@ -28,6 +28,8 @@ module.exports = {
         secondaryDark: '#112031',
         tertinary: '#366271',
         tertinaryDark: '#6e9ac9',
+        hoverColor: '#DEE5EE',
+        hoverColorDark: '#172448',
         borderColor: '#AAC6E5',
         borderColorDark: '#2D4484',
         textColor: '#123456',

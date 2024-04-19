@@ -1,5 +1,7 @@
 import './globals.css';
 import React from 'react';
+import Header from '@/components/Header/Header';
+import FilAriane from '@/components/FilAriane/FilAriane';
 
 export const metadata = {
   title: 'JobFeeling',
@@ -10,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <FilAriane />
+        {children}
+      </body>
     </html>
   );
 }
