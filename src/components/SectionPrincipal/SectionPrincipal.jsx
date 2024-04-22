@@ -14,7 +14,7 @@ export default function ImgPrincipal() {
   };
 
   return (
-    <div className="relative w-full h-auto text-textColor dark:text-textColorDark">
+    <div className="relative w-full h-auto text-textColor dark:text-textColorDark rounded-b-lg border-b shadow shadow-backgroundDark">
       <Image
         className="w-full h-screen object-cover"
         src="/images/imgPrincipale.webp"
@@ -36,7 +36,7 @@ export default function ImgPrincipal() {
           action="/submit_search"
           method="post"
           onSubmit={handleSubmit}
-          className="elementPrincipal bottom-1/4 tablette:w-11/12 lg:w-10/12 2xl:w-1/2 justify-center items-center bg-secondary dark:bg-secondaryDark"
+          className="elementPrincipal bottom-1/4 tablette:w-11/12 lg:w-10/12 2xl:w-1/2 justify-center items-center bg-secondary dark:bg-secondaryDark "
         >
           <div className="group mobile:hidden">
             <label for="metier">Métier : </label>

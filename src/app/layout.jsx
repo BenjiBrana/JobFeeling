@@ -4,6 +4,7 @@ import React from 'react';
 import Header from '@/components/Header/Header';
 import FilAriane from '@/components/FilAriane/FilAriane';
 import ArrowTop from '@/components/ArrowTop/ArrowTop';
+import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
   title: 'JobFeeling',
@@ -15,13 +16,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <Head>
-        <link rel="canonical" href="https://ccp1-brana.vercel.app/" />
+        <link rel="canonical" href="https://jobfeeling.vercel.app/" />
       </Head>
-      <body id="top">
+      <body id="top" className="bg-background">
         <Header />
+
         <FilAriane />
         <ArrowTop />
         {children}
+        <Footer />
       </body>
     </html>
   );

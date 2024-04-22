@@ -30,7 +30,7 @@
 }
 
 .elementPrincipal {
-  @apply border flex -translate-x-1/2 left-1/2 absolute rounded-md font-bold;
+  @apply border shadow shadow-backgroundDark flex -translate-x-1/2 left-1/2 absolute rounded-md font-bold;
 }
 
 .inputStyle {
