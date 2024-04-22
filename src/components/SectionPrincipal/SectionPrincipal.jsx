@@ -1,17 +1,25 @@
 import React from 'react';
 import Image from 'next/image';
+import { useState } from 'react';
+import ModalSearch from '../ModalSearch/ModalSearch';
 
 export default function ImgPrincipal() {
+  const [showModal, setShowModal] = useState(false);
   const handleSubmit = (event) => {
     event.preventDefault();
+    setShowModal(true);
   };
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="relative w-full h-auto text-textColor dark:text-textColorDark">
       <Image
         className="w-full h-screen object-cover"
         src="/images/imgPrincipale.webp"
-        alt="Logo RWF"
-        title="Logo Rural Web Factory"
+        alt="Image principal"
+        title="Image de présentation"
         width={1440}
         height={900}
       />
@@ -56,29 +64,38 @@ export default function ImgPrincipal() {
               required
             />
           </div>
+          <div className=" rounded-r-lg mx-6 tablette:w-8 lg:w-10 mobile:hidden">
+            <Image
+              src="/logo/search.svg"
+              alt="Logo search"
+              title="Logo de recherche"
+              width="48"
+              height="48"
+            />
+          </div>
           <div className="group hidden mobile:flex mobile:flex-col">
-            <label for="rechercher">Rechercher : </label>
-            <br />
+            <label className="my-2" for="rechercher">
+              Un métier, une ville, saisissez votre recherche
+            </label>
+
             <input
               className="inputStyle"
-              type="search"
+              type="btn"
               id="rechercher"
               name="rechercher"
               aria-label="rechercher"
-              placeholder="Cliquer pour rechercher"
+              placeholder="Développeur web / Angoulême / . . ."
               required
+              onClick={handleSubmit}
             />
           </div>
-
-          <Image
-            className=" rounded-r-lg mx-6 tablette:w-8 lg:w-10"
-            src="/logo/search.svg"
-            alt="Logo search"
-            title="Logo de recherche"
-            width="48"
-            height="48"
-          />
         </form>
+        {showModal && (
+          <ModalSearch
+            closeModal={closeModal}
+            onSubmit={handleSubmit}
+          />
+        )}
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import Image from 'next/image';
-import ImgPrincipal from '@/components/ImgPrincipal/ImgPrincipal';
+import SectionPrincipal from '@/components/SectionPrincipal/SectionPrincipal';
 
 export default function Page({ children }) {
   useEffect(() => {
@@ -33,7 +32,7 @@ export default function Page({ children }) {
 
   return (
     <main className="w-full">
-      <ImgPrincipal />
+      <SectionPrincipal />
       {children}
     </main>
   );

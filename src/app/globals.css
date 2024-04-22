@@ -25,10 +25,14 @@
   @apply border border-borderColor dark:border-borderColorDark flex-1 py-2 px-6 text-xl tablette:text-sm;
 }
 
+.groupModal {
+  @apply border border-borderColor dark:border-borderColorDark flex-1 p-1 pb-0 text-xl tablette:text-sm;
+}
+
 .elementPrincipal {
   @apply border flex -translate-x-1/2 left-1/2 absolute rounded-md font-bold;
 }
 
 .inputStyle {
-  @apply border border-borderColor dark:border-borderColorDark px-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark dark:active:border-borderColor;
+  @apply cursor-pointer border border-borderColor dark:border-borderColorDark px-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark dark:active:border-borderColor;
 }

@@ -57,11 +57,17 @@ export default function Header() {
   ];
 
   return (
-    <header className="flex items-center px-16 shadow-xl shadow-backgroundDark w-full justify-between tablette:px-8 mobile:px-1 relative border-b border-borderColor dark:border-borderColorDark  font-textFont text-textColor dark:text-textColorDark bg-secondary dark:bg-secondaryDark">
+    <header
+      className={`flex items-center px-16  shadow shadow-backgroundDark w-full justify-between tablette:px-8 mobile:px-1 relative border-b border-borderColor dark:border-borderColorDark  font-textFont text-textColor dark:text-textColorDark bg-secondary dark:bg-secondaryDark ${
+        menuOpen
+          ? ' flex-col items-center justify-center mobile:pt-4'
+          : 'flex-row '
+      }`}
+    >
       <div className=" cursor-pointer transition-all hover:scale-110">
         <Link href="/">
           <Image
-            className="my-1"
+            className={`my-1 ${menuOpen ? 'auto ' : 'h-16 w-16 '}`}
             src="/images/jobfeeling_mini.webp"
             alt="Logo JobFeeling"
             title="Logo officiel de JobFeeling"
@@ -73,14 +79,14 @@ export default function Header() {
       <nav
         className={`flex justify-between  items-start ${
           menuOpen
-            ? 'bg-primary/90 z-30 w-full'
+            ? 'bg-primary/90 z-30 w-full flex-wrap'
             : 'bg-transparent z-10'
         }`}
       >
         <ul
           className={`flex  ${
             menuOpen
-              ? 'h-screen flex flex-col'
+              ? 'h-screen w-full  flex flex-col'
               : 'auto flex-row tablette:hidden'
           } items-center gap-6 w-full justify-evenly tablette:justify-center`}
         >
@@ -103,41 +109,13 @@ export default function Header() {
             <>
               <Image
                 id="closeIcon"
-                className="h-8 w-8 hover:bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
+                className="absolute top-1 right-1 h-8 w-8 hover:bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
                 src="/logo/close.svg"
                 alt="Logo fermeture"
                 title="Logo pour fermer le menu"
                 width={30}
                 height={30}
               />
-              <div className="btnGroup">
-                <button
-                  className="buttonMode bg-blue-500/50"
-                  id="nightModeBtn"
-                >
-                  <Image
-                    className="moon h-5 w-5"
-                    src="/logo/moon.svg"
-                    alt="Logo dark mode"
-                    title="Logo pour activer le dark mode"
-                    width={30}
-                    height={30}
-                  />
-                </button>
-                <button
-                  className="buttonMode bg-yellow-500/50"
-                  id="dayModeBtn"
-                >
-                  <Image
-                    className="sun  h-5 w-5"
-                    src="/logo/sun.svg"
-                    alt="Logo light mode"
-                    title="Logo pour activer le light mode"
-                    width={30}
-                    height={30}
-                  />
-                </button>
-              </div>
             </>
           ) : (
             <Image
