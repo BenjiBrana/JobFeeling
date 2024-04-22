@@ -57,22 +57,23 @@ export default function Header() {
   ];
 
   return (
-    <header className="flex items-center px-16 shadow-xl shadow-backgroundDark w-full justify-between tablette:px-8 mobile:px-0 relative border-b border-borderColor  font-textFont text-textColor bg-secondary">
+    <header className="flex items-center px-16 shadow-xl shadow-backgroundDark w-full justify-between tablette:px-8 mobile:px-1 relative border-b border-borderColor dark:border-borderColorDark  font-textFont text-textColor dark:text-textColorDark bg-secondary dark:bg-secondaryDark">
       <div className=" cursor-pointer transition-all hover:scale-110">
         <Link href="/">
           <Image
+            className="my-1"
             src="/images/jobfeeling_mini.webp"
             alt="Logo JobFeeling"
             title="Logo officiel de JobFeeling"
-            width={80}
-            height={80}
+            width={84}
+            height={84}
           />
         </Link>
       </div>
       <nav
         className={`flex justify-between  items-start ${
           menuOpen
-            ? 'bg-primary/90 z-30  w-full'
+            ? 'bg-primary/90 z-30 w-full'
             : 'bg-transparent z-10'
         }`}
       >
@@ -141,7 +142,7 @@ export default function Header() {
           ) : (
             <Image
               id="menuIcon"
-              className=" h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 rounded-full p-1 shadow-lg shadow-black"
+              className=" h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 dark:hover:bg-tertinaryDark/70 rounded-full p-1 shadow-lg shadow-black dark:shadow-white"
               src="/logo/burger_menu.svg"
               alt="Logo burger menu"
               title="Logo pour ouvrir le menu"

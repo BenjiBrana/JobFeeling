@@ -18,11 +18,11 @@
 }
 
 .itemMenu {
-  @apply font-bold text-lg text-center uppercase leading-10 w-auto px-4 py-1 rounded-md shadow-md border border-borderColor bg-hoverColor scale-95 transition-all hover:scale-110;
+  @apply font-bold text-lg text-center uppercase leading-10 w-auto px-4 py-1 rounded-md shadow-md border border-borderColor dark:border-borderColorDark bg-hoverColor dark:bg-hoverColorDark scale-95 transition-all hover:scale-110;
 }
 
 .group {
-  @apply border border-borderColor flex-1 py-2 px-6 text-xl;
+  @apply border border-borderColor dark:border-borderColorDark flex-1 py-2 px-6 text-xl tablette:text-sm;
 }
 
 .elementPrincipal {
@@ -30,5 +30,5 @@
 }
 
 .inputStyle {
-  @apply border border-borderColor pl-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark active:border-borderColorDark;
+  @apply border border-borderColor dark:border-borderColorDark px-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark dark:active:border-borderColor;
 }
