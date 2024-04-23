@@ -54,6 +54,6 @@
 }
 
 .containerSectionPage {
-  @apply h-screen tablette:h-full tablette:my-12 flex items-center justify-center pt-4 px-4;
+  @apply w-full h-screen tablette:h-full tablette:my-12 flex items-center justify-center pt-4 px-4;
 
 }
