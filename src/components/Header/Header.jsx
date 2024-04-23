@@ -64,7 +64,7 @@ export default function Header() {
           : 'flex-row '
       }`}
     >
-      <div className=" cursor-pointer transition-all hover:scale-110">
+      <div className=" cursor-pointer transition-all hover:scale-105">
         <Link href="/">
           <Image
             className={`my-1 ${menuOpen ? 'auto ' : 'h-16 w-16 '}`}
@@ -109,7 +109,7 @@ export default function Header() {
             <>
               <Image
                 id="closeIcon"
-                className="absolute top-1 right-1 h-8 w-8 hover:bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
+                className="absolute top-1 right-1 h-8 w-8 bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
                 src="/logo/close.svg"
                 alt="Logo fermeture"
                 title="Logo pour fermer le menu"
@@ -120,7 +120,7 @@ export default function Header() {
           ) : (
             <Image
               id="menuIcon"
-              className=" h-10 w-10 z-10 bg-primary/70 hover:bg-tertinary/70 dark:hover:bg-tertinaryDark/70 rounded-full p-1 shadow-lg shadow-black dark:shadow-white"
+              className=" h-10 w-10 z-10 bg-background/70  hover:bg-tertinary/70 dark:hover:bg-tertinaryDark/70 rounded-full p-1 shadow-md shadow-black dark:shadow-white"
               src="/logo/burger_menu.svg"
               alt="Logo burger menu"
               title="Logo pour ouvrir le menu"

@@ -5,7 +5,7 @@ export default function ModalSearch(
   return (
     <div className="fixed flex flex-col text-textColor dark:text-textColorDark top-0 justify-start items-center left-0 z-50 w-full h-full bg-background dark:bg-backgroundDark">
       <button
-        className="w-full py-2  bg-background text-textColor dark:text-textColorDark font-bold border-b border-borderColor dark:border-borderColorDark"
+        className="w-full py-2  bg-background hover:bg-backgroundDark dark:bg-backgroundDark dark:hover:bg-background text-textColor hover:text-textColorDark dark:text-textColorDark dark:hover:text-textColor font-bold border-b border-borderColor dark:border-borderColorDark"
         onClick={closeModal}
       >
         Fermer
@@ -50,14 +50,14 @@ export default function ModalSearch(
               />
             </div>
           </div>
-          <div className="flex flex-col flex-1 w-full bg-background">
+          <div className="flex flex-col flex-1 w-full bg-background dark:bg-backgroundDark">
             <h2 className="text-center border-b py-2 text-xs">
               Résultat de votre recherche :
             </h2>
           </div>
           <div className="flex absolute bottom-0  w-full ">
             <input
-              className="border cursor-pointer text-center font-bold text-textColor border-borderColor dark:border-borderColorDark mt-2 h-12 w-full rounded-t-md hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark bg-orange"
+              className="border cursor-pointer text-center font-bold text-textColor border-borderColor dark:border-borderColorDark mt-2 h-12 w-full rounded-t-md hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark bg-orange hover:text-lg"
               type="button"
               id="afficher"
               name="afficher"

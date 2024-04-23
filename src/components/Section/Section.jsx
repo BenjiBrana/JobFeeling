@@ -2,9 +2,18 @@ import Image from 'next/image';
 export default function Section() {
   return (
     <section className="flex flex-col w-full bg-background dark:bg-backgroundDark ">
-      <article className="flex flex-col ml-20 tablette:mx-4">
-        <h2 className="mt-20 w-full  border-t border-b border-borderColor dark:border-borderColorDark  py-2 text-left text-textColor dark:text-textColorDark  text-4xl font-bold font-titleFont ">
-          Nos conseils
+      <article className="flex flex-col mx-20 tablette:mx-4 scale-95 hover:scale-100">
+        <h2 className="mt-20 w-full  flex flex-row items-center justify-between border-t border-b border-borderColor dark:border-borderColorDark  py-2 text-left text-textColor dark:text-textColorDark  text-4xl font-bold font-titleFont ">
+          Notre conseil du jour
+          <Image
+            id="iconIdee"
+            className=" h-16 w-16  opacity-80 border shadow shadow-backgroundDark hover:border-2"
+            src="/logo/logo_conseil.webp"
+            alt="Logo conseil"
+            title="Logo de conseil"
+            width={30}
+            height={30}
+          />
         </h2>
         <div className="flex flex-row tablette:flex-col  tablette:items-center lg:justify-start  xl:mr-20 2xl:mr-0">
           <Image
@@ -44,7 +53,7 @@ export default function Section() {
               engagement envers le poste et l'entreprise. . . .{' '}
             </p>
             <a
-              className="bg-orange xl:w-2/6 lg:w-1/2  text-textColor text-center font-bold rounded py-4 shadow shadow-backgroundDark "
+              className="bg-orange xl:w-2/6 lg:w-1/2  text-textColor text-center font-bold rounded py-4 shadow shadow-backgroundDark hover:scale-95"
               href="#"
               target="_blank"
             >

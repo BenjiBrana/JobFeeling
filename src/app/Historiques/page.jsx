@@ -1,9 +1,15 @@
-export default function Connexion() {
+export default function Historiques() {
   return (
-    <section className="flex w-full bg-background dark:bg-backgroundDark ">
-      <h1 className="py-6 w-full text-center text-textColor dark:text-textColorDark  text-4xl font-titleFont border-b border-borderColor dark:border-borderColorDark">
-        Connexion
-      </h1>
+    <section className="sectionPage">
+      <h1 className="titleSectionPage">Mon historiques</h1>
+      <div className="containerSectionPage">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Molestias omnis repudiandae animi inventore architecto vitae
+          facilis optio beatae nobis est cum, magnam accusantium
+          dolorum velit aliquam quo culpa maiores illum.
+        </p>
+      </div>
     </section>
   );
 }

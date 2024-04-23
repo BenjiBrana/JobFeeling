@@ -33,7 +33,7 @@ export default function ArrowTop() {
     <div className="arrowTop">
       <a href="#top" aria-label="Retour au début de la page">
         <Image
-          className="h-6 w-6"
+          className="h-6 w-6 dark:bg-white rounded-full"
           src="/logo/arrow_up.svg"
           alt="Logo flèche vers le haut"
           title="Cliquer pour retourner en haut de la page"

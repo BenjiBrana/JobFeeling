@@ -14,7 +14,7 @@
 }
 
 .arrowTop {
-  @apply z-10 flex bottom-1 right-1 items-center justify-center border w-auto h-auto tablette:w-6 tablette:h-6 rounded-full fixed hover:bg-hoverColor;
+  @apply z-10 flex bottom-1 right-1 items-center justify-center border w-auto h-auto tablette:w-6 tablette:h-6 rounded-full fixed hover:bg-hoverColor dark:hover:bg-hoverColorDark;
 }
 
 .itemMenu {
@@ -34,5 +34,26 @@
 }
 
 .inputStyle {
-  @apply cursor-pointer border border-borderColor dark:border-borderColorDark px-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark dark:active:border-borderColor;
+  @apply cursor-pointer border border-borderColor dark:border-borderColorDark text-textColor dark:text-textColor px-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark dark:active:border-borderColor;
+}
+
+.sectionPage {
+  @apply flex flex-col w-full bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark;
+}
+
+.groupForm {
+  @apply px-6 text-xl tablette:py-6 mobile:w-full flex flex-col w-3/4;
+}
+
+.inputForm {
+  @apply inputStyle px-3 py-2 mt-2 focus:outline-none mobile:text-sm focus:border-borderColor shadow shadow-backgroundDark dark:shadow-background;
+}
+
+.titleSectionPage {
+  @apply py-6 w-full text-center text-textColor dark:text-textColorDark text-4xl font-titleFont border-b border-borderColor dark:border-borderColorDark tablette:mt-8 mobile:mt-12;
+}
+
+.containerSectionPage {
+  @apply h-screen tablette:h-full tablette:my-12 flex items-center justify-center pt-4 px-4;
+
 }

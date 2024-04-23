@@ -32,12 +32,12 @@ export default function Footer() {
     },
   ];
   return (
-    <footer class="bg-secondary dark:bg-secondaryDark text-textColor px-20 flex justify-between p-5 mt-8">
-      <div class="flex flex-col items-center gap-4 justify-center">
+    <footer class="bg-secondary dark:bg-secondaryDark text-textColor dark:text-textColorDark px-20 flex tablette:flex-col tablette:items-center justify-between p-5 mt-8 tablette:gap-8">
+      <div class="flex flex-col items-center gap-4 justify-center tablette:order-4">
         <h2 className="font-bold text-2xl">JobFeeling</h2>
         <Image
           id="logoFooter"
-          className="mobile:mt-4 border shadow shadow-backgroundDark hover:border-2 rounded-full p-1"
+          className=" border shadow shadow-backgroundDark hover:border-2 rounded-full"
           src="/images/jobfeeling.webp"
           alt="Logo JobFeeling"
           title="Logo officiel de JobFeeling "
@@ -51,12 +51,11 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {' '}
             Site réalisé par Brana Benjamin
           </a>
         </h4>
       </div>
-      <div class="flex flex-col justify-around items-center">
+      <div class="flex flex-col tablette:flex-row mobile:flex-col gap-4 justify-around items-start tablette:order-3">
         <a className="hover:font-bold" href="/mentions-legales">
           Mentions légales
         </a>
@@ -70,7 +69,7 @@ export default function Footer() {
           Plan du site
         </a>
       </div>
-      <div className="flex flex-col justify-start mt-4 gap-4">
+      <div className="flex flex-col justify-start mt-4 gap-4 tablette:order-2">
         <a
           href="#"
           className="flex flex-row items-center gap-4 hover:font-bold"
@@ -100,9 +99,11 @@ export default function Footer() {
           <p> Facil'iti</p>
         </a>
       </div>
-      <div class="flex flex-col items-center gap-4">
-        <h2 className="font-bold text-2xl">Suivez-nous</h2>
-        <div className="flex flex-row gap-4">
+      <div class="flex flex-col items-center gap-4 tablette:order-1">
+        <h2 className="font-bold text-2xl text-center">
+          Suivez-nous
+        </h2>
+        <div className="flex mobile:flex-wrap justify-center items-center lg:flex-row gap-4">
           {liensReseauxSociaux.map((lienReseauSocial) => (
             <div key={lienReseauSocial.id}>
               <Link

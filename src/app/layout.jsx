@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="canonical" href="https://jobfeeling.vercel.app/" />
       </Head>
-      <body id="top" className="bg-background">
+      <body id="top" className="bg-background dark:bg-backgroundDark">
         <Header />
 
         <FilAriane />
