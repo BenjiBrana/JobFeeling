@@ -3,7 +3,7 @@ export default function Section() {
   return (
     <section className="flex flex-col w-full bg-background dark:bg-backgroundDark ">
       <article className="flex flex-col mx-20 tablette:mx-4 scale-95 hover:scale-100">
-        <h2 className="mt-20 w-full  flex flex-row items-center justify-between border-t border-b border-borderColor dark:border-borderColorDark  py-2 text-left text-textColor dark:text-textColorDark  text-4xl font-bold font-titleFont ">
+        <h2 className="mt-20 w-full  flex flex-row items-center justify-between border-t border-b border-borderColor dark:border-borderColorDark  py-2 text-left text-textColor dark:text-textColorDark  text-4xl tablette:text-3xl mobile:text-2xl font-bold font-titleFont ">
           Notre conseil du jour
           <Image
             id="iconIdee"
@@ -30,7 +30,7 @@ export default function Section() {
             <div className="flex flex-row mobile:flex-col items-center gap-8 mb-4">
               <Image
                 id="iconIdee"
-                className=" h-16 w-16 mobile:mt-4 border shadow shadow-backgroundDark hover:border-2 rounded-full p-1"
+                className=" h-16 w-16 mobile:mt-4 border shadow shadow-backgroundDark dark:shadow-background hover:border-2 rounded-full p-1"
                 src="/logo/logo_idee.svg"
                 alt="Logo idée"
                 title="Logo pour donner une indication"
@@ -41,7 +41,7 @@ export default function Section() {
                 Comment faire bonne impression en entretien ?
               </h3>
             </div>
-            <p className="text-lg mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
+            <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
               Pour faire bonne impression en entretien, commencez par
               une préparation minutieuse en recherchant l'entreprise
               et en anticipant les questions possibles. <br />

@@ -50,7 +50,7 @@ export default function Header() {
   }, []);
 
   const items = [
-    { id: 'Historiques', name: 'Historiques' },
+    { id: 'Annonces', name: 'Annonces' },
     { id: 'Notifications', name: 'Notifications' },
     { id: 'Messages', name: 'Messages' },
     { id: 'Profil', name: 'Profil' },

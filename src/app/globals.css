@@ -37,9 +37,6 @@
   @apply cursor-pointer border border-borderColor dark:border-borderColorDark text-textColor dark:text-textColor px-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark dark:active:border-borderColor;
 }
 
-.sectionPage {
-  @apply flex flex-col w-full bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark;
-}
 
 .groupForm {
   @apply px-6 text-xl tablette:py-6 mobile:w-full flex flex-col w-3/4;
@@ -49,11 +46,35 @@
   @apply inputStyle px-3 py-2 mt-2 focus:outline-none mobile:text-sm focus:border-borderColor shadow shadow-backgroundDark dark:shadow-background;
 }
 
+.sectionPage {
+  @apply flex flex-col w-full h-full px-16 mobile:px-0 bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark;
+}
+
 .titleSectionPage {
   @apply py-6 w-full text-center text-textColor dark:text-textColorDark text-4xl font-titleFont border-b border-borderColor dark:border-borderColorDark tablette:mt-8 mobile:mt-12;
 }
 
-.containerSectionPage {
-  @apply w-full h-screen tablette:h-full tablette:my-12 flex items-center justify-center pt-4 px-4;
+.sideBar {
+  @apply h-full flex flex-col mb-8 border border-borderColor dark:border-borderColorDark rounded-r-md left-0 bg-secondary dark:bg-secondaryDark 2xl:w-2/12 xl:w-3/12 tablette:w-full tablette:items-center shadow shadow-backgroundDark dark:shadow-background;
+}
 
+.subTitleSectionPage {
+  @apply py-6 w-full border-b border-borderColor dark:border-borderColorDark tablette:mt-8 mobile:mt-12 text-center text-textColor font-bold dark:text-textColorDark text-2xl font-titleFont;
+
+}
+
+.containerSectionPage {
+  @apply w-full h-full tablette:my-12 flex flex-col tablette:items-center lg:flex-row items-start pt-4 px-4;
+}
+
+.card {
+  @apply bg-secondary dark:bg-secondaryDark border border-borderColor dark:border-borderColorDark rounded-md flex flex-col p-4 2xl:w-5/12 xl:w-3/4 lg:w-5/6 mx-8 tablette:mx-0 shadow shadow-backgroundDark dark:shadow-background;
+}
+
+.articleHeader {
+  @apply flex-col items-center;
+}
+
+.articleBody {
+  @apply flex-col justify-between items-center transform h-full w-full rounded-lg transition-opacity duration-500;
 }

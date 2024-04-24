@@ -1,7 +1,7 @@
-export default function Historiques() {
+export default function Notifications() {
   return (
     <section className="sectionPage">
-      <h1 className="titleSectionPage">Mon historiques</h1>
+      <h1 className="titleSectionPage">Mes annonces</h1>
       <div className="containerSectionPage">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.

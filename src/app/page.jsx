@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 import SectionPrincipal from '@/components/SectionPrincipal/SectionPrincipal';
-import Section from '@/components/Section/Section';
+import ArticleAccueil from '@/components/ArticleAccueil/ArticleAccueil';
 
 export default function Page({ children }) {
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Page({ children }) {
   return (
     <main className="w-full">
       <SectionPrincipal />
-      <Section />
+      <ArticleAccueil />
       {children}
     </main>
   );
