@@ -55,7 +55,7 @@
 }
 
 .sideBar {
-  @apply h-full flex flex-col mb-8 border border-borderColor dark:border-borderColorDark rounded-r-md left-0 bg-secondary dark:bg-secondaryDark 2xl:w-2/12 xl:w-3/12 tablette:w-full tablette:items-center shadow shadow-backgroundDark dark:shadow-background;
+  @apply h-full flex flex-col mb-8 left-0 bg-secondary dark:bg-secondaryDark 2xl:w-2/12 xl:w-3/12 tablette:w-full tablette:items-center;
 }
 
 .subTitleSectionPage {
@@ -68,7 +68,7 @@
 }
 
 .card {
-  @apply bg-secondary dark:bg-secondaryDark border border-borderColor dark:border-borderColorDark rounded-md flex flex-col p-4 2xl:w-5/12 xl:w-3/4 lg:w-5/6 mx-8 tablette:mx-0 shadow shadow-backgroundDark dark:shadow-background;
+  @apply bg-secondary dark:bg-secondaryDark flex flex-col p-4 2xl:w-5/12 xl:w-3/4 lg:w-5/6 mx-8 tablette:mx-0;
 }
 
 .articleHeader {
@@ -77,4 +77,16 @@
 
 .articleBody {
   @apply flex-col justify-between items-center transform h-full w-full rounded-lg transition-opacity duration-500;
+}
+
+.conversations {
+  @apply flex tablette:flex-col w-full items-center gap-4 lg:pr-1 xl:pr-4 bg-background dark:bg-backgroundDark;
+}
+
+.message {
+  @apply flex flex-row lg:w-5/6 xl:w-4/5 2xl:w-2/3 gap-4 bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark borderShadow
+}
+
+.borderShadow {
+  @apply shadow shadow-backgroundDark dark:shadow-background border rounded border-borderColorDark dark:border-borderColor;
 }

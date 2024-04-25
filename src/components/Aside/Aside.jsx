@@ -8,7 +8,7 @@ export default function Section() {
     setOpenContainer(!openContainer);
   };
   return (
-    <aside className=" sideBar">
+    <aside className=" sideBar borderShadow">
       <Image
         className="rounded-lg shadow shadow-backgroundDark dark:shadow-background border border-borderColor dark:border-borderColorDark mx-auto mt-4"
         src="/images/img_profil.webp"

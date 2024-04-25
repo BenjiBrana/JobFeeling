@@ -24,7 +24,7 @@ export default function CurriculumVitae() {
     setOpenContainer(!openContainer);
   };
   return (
-    <article className="card">
+    <article className="card borderShadow">
       <h2
         onClick={toggleOpenContainer}
         className="subTitleSectionPage flex gap-4 justify-center items-center"

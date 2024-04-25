@@ -13,7 +13,7 @@ export default function Profil() {
           Bonjour Benjamin
         </span>
         <button
-          className="w-auto p-2 bg-secondary dark:bg-secondaryDark border rounded border-borderColor dark:border-borderColorDark hover:bg-hoverColor dark:hover:bg-hoverColorDark"
+          className="w-auto p-2 bg-secondary dark:bg-secondaryDark borderShadow hover:bg-hoverColor dark:hover:bg-hoverColorDark"
           type="button"
         >
           Déconnexion

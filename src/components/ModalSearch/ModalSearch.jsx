@@ -5,7 +5,7 @@ export default function ModalSearch(
   return (
     <div className="fixed flex flex-col text-textColor dark:text-textColorDark top-0 justify-start items-center left-0 z-50 w-full h-full bg-background dark:bg-backgroundDark">
       <button
-        className="w-full py-2  bg-background hover:bg-backgroundDark dark:bg-backgroundDark dark:hover:bg-background text-textColor hover:text-textColorDark dark:text-textColorDark dark:hover:text-textColor font-bold border-b border-borderColor dark:border-borderColorDark"
+        className="w-full py-2 borderShadow  bg-background hover:bg-backgroundDark dark:bg-backgroundDark dark:hover:bg-background text-textColor hover:text-textColorDark dark:text-textColorDark dark:hover:text-textColor font-bold "
         onClick={closeModal}
       >
         Fermer
@@ -57,7 +57,7 @@ export default function ModalSearch(
           </div>
           <div className="flex absolute bottom-0  w-full ">
             <input
-              className="border cursor-pointer text-center font-bold text-textColor border-borderColor dark:border-borderColorDark mt-2 h-12 w-full rounded-t-md hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark bg-orange hover:text-lg"
+              className=" cursor-pointer text-center font-bold text-textColor mt-2 h-12 w-full borderShadow hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark bg-orange hover:text-lg"
               type="button"
               id="afficher"
               name="afficher"

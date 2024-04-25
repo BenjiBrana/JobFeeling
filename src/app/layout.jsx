@@ -23,10 +23,11 @@ export default function RootLayout({ children }) {
         className="bg-background dark:bg-backgroundDark font-textFont"
       >
         <Header />
-
         <FilAriane />
         <ArrowTop />
-        {children}
+        <main className="flex flex-col min-h-screen justify-between">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

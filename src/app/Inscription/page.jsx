@@ -12,9 +12,9 @@ export default function Inscription() {
   return (
     <section className="sectionPage">
       <h1 className="titleSectionPage">Inscription</h1>
-      <div className="containerSectionPage xl:scale-90">
+      <div className="w-full h-full my-12 flex flex-col justify-center lg:flex-row items-center pt-4 px-4  xl:scale-90">
         <form
-          className="flex flex-col items-center mobile:w-full tablette:w-3/4 w-1/2  h-full justify-evenly border border-borderColor dark:border-borderColorDark bg-secondary dark:bg-secondaryDark rounded text-textColor dark:text-textColorDark shadow shadow-backgroundDark dark:shadow-background"
+          className="flex flex-col items-center mobile:w-full tablette:w-10/12 w-2/3 xl:w-1/2 h-full py-8 lg:gap-8 lg:h-1/2 justify-evenly border border-borderColor dark:border-borderColorDark bg-secondary dark:bg-secondaryDark rounded text-textColor dark:text-textColorDark shadow shadow-backgroundDark dark:shadow-background"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="groupForm ">

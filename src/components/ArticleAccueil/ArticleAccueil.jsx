@@ -53,7 +53,7 @@ export default function Section() {
               engagement envers le poste et l'entreprise. . . .{' '}
             </p>
             <a
-              className="bg-orange xl:w-2/6 lg:w-1/2  text-textColor text-center font-bold rounded py-4 shadow shadow-backgroundDark hover:scale-95"
+              className="bg-orange xl:w-2/6 lg:w-1/2  text-textColor text-center font-bold  py-4 borderShadow hover:scale-95"
               href="#"
               target="_blank"
             >

@@ -14,9 +14,9 @@ export default function Connexion() {
   return (
     <section className="sectionPage">
       <h1 className="titleSectionPage">Connexion</h1>
-      <div className="containerSectionPage">
+      <div className="w-full h-full my-12 flex flex-col justify-center lg:flex-row items-center pt-4 px-4 ">
         <form
-          className="flex flex-col items-center mobile:w-full tablette:w-3/4 w-1/2 xl:w-1/3 tablette:h-full  lg:h-1/2 justify-evenly border border-borderColor dark:border-borderColorDark bg-secondary dark:bg-secondaryDark rounded text-textColor dark:text-textColorDark shadow shadow-backgroundDark dark:shadow-background"
+          className="flex flex-col items-center mobile:w-full tablette:w-3/4 w-1/2 xl:w-1/3 h-full py-8 lg:gap-8 lg:h-1/2 justify-evenly border border-borderColor dark:border-borderColorDark bg-secondary dark:bg-secondaryDark rounded text-textColor dark:text-textColorDark shadow shadow-backgroundDark dark:shadow-background"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="groupForm ">
