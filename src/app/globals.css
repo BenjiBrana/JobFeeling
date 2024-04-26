@@ -80,11 +80,11 @@
 }
 
 .conversations {
-  @apply flex flex-col tablette:flex-row tablette:w-auto w-full items-center gap-4 lg:pr-1 xl:pr-4 bg-background dark:bg-backgroundDark tablette:gap-2 tablette:align-middle tablette:pr-4 tablette:text-center py-2 justify-start;
+  @apply flex flex-col tablette:flex-row tablette:min-w-max w-full items-center gap-4 lg:pr-1 xl:pr-4 bg-background dark:bg-backgroundDark tablette:gap-2 tablette:align-middle tablette:text-center justify-start;
 }
 
 .message {
-  @apply flex flex-row lg:w-5/6 xl:w-4/5 2xl:w-2/3 gap-4 bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark borderShadow
+  @apply flex flex-row mobile:flex-col mobile:items-center lg:w-5/6 xl:w-4/5 2xl:w-2/3 gap-4 bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark borderShadow
 }
 
 .borderShadow {

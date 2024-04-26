@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 
 export default function Messages() {
@@ -100,9 +100,6 @@ export default function Messages() {
         "Bonjour Benjamin c'est Ludovic, je suis interessé par votre profil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, architecto? Laudantium fuga perspiciatis aperiam error rerum culpa architecto corporis sequi quasi!",
     },
   ];
-
-  const [expanded, setExpanded] = useState(false);
-
   const handleTextareaClick = () => {
     setExpanded(true);
   };
@@ -110,8 +107,14 @@ export default function Messages() {
   const handleTextareaBlur = () => {
     setExpanded(false);
   };
+
+  const [openFooter, setOpenFooter] = useState(false);
+  const toggleOpenFooter = () => {
+    // Inverse l'état actuel
+    setOpenFooter(!openFooter);
+  };
   return (
-    <section className="sectionPage">
+    <section className="relative sectionPage">
       <h1 className="titleSectionPage">Mes messages</h1>
       <div className="w-full tablette:h-1/6 h-full  flex flex-col tablette:items-center lg:flex-row items-start pt-4 px-4 tablette:px-0 gap-2">
         <aside className=" tablette:w-full w-2/12 border bg-secondary dark:bg-secondaryDark text-textColor dark:text-textColorDark borderShadow tablette:h-1/6 h-screen flex flex-col">
@@ -138,7 +141,7 @@ export default function Messages() {
                   height={64}
                 />
                 <div className="flex flex-col mx-auto tablette:px-2">
-                  <span className="xl:text-base text-sm font-bold">
+                  <span className="xl:text-base mx-auto px-2 text-center  text-sm font-bold">
                     {`${
                       conversation.utilisateurLastName.length > 10
                         ? conversation.utilisateurLastName.substring(
@@ -148,7 +151,7 @@ export default function Messages() {
                         : conversation.utilisateurLastName
                     } ${conversation.utilisateurFirstName}`}
                   </span>
-                  <span className="tablette:hidden text-sm flex flex-col text-start h-full justify-center">
+                  <span className=" text-sm  mx-auto px-2 text-center flex flex-col  h-full justify-center">
                     <span>Dernier message:</span>
                     <span className="lg:text-xs xl:text-sm">
                       {conversation.dateConversation}
@@ -159,10 +162,20 @@ export default function Messages() {
             ))}
           </div>
         </aside>
-        <section className="relative tablette:w-full w-10/12 border borderShadow h-screen flex flex-col  px-4 pt-4 bg-secondary dark:bg-secondaryDark">
-          <span className=" font-titleFont font-bold mb-4 border-b shadow-b shadow-backgroundDark dark:shadow-background border-borderColorDark dark:border-borderColor">
-            Brana Benjamin
-          </span>
+        <section className="relative tablette:w-full w-10/12 border borderShadow h-screen flex flex-col pt-4 bg-secondary dark:bg-secondaryDark">
+          <div className=" font-titleFont font-bold text-center mx-2 mb-4 border-b shadow-b shadow-backgroundDark dark:shadow-background border-borderColorDark dark:border-borderColor">
+            {conversations.map((conversation, index) => {
+              if (index === 0) {
+                return (
+                  <span key={index}>
+                    {`${conversation.utilisateurLastName} ${conversation.utilisateurFirstName}`}
+                  </span>
+                );
+              } else {
+                return null;
+              }
+            })}
+          </div>
           <div className="flex flex-col overflow-y-auto w-full font-textFont text-lg">
             {messages.map((message, index) => (
               <div
@@ -186,11 +199,12 @@ export default function Messages() {
               </div>
             ))}
           </div>
-          <div className="relative flex flex-row mb-1 border-t border-b-0 shadow shadow-backgroundDark dark:shadow-background  rounded border-borderColorDark dark:border-borderColor">
+          <div
+            className=" z-40 flex flex-row m-2 relative border-t border-b-0 shadow shadow-backgroundDark dark:shadow-background  rounded border-borderColorDark dark:border-borderColor 
+             "
+          >
             <textarea
-              className={`w-full  py-2 pl-2 ${
-                expanded ? 'h-32' : 'h-16'
-              }`}
+              className="w-full  py-2 pl-2"
               name="message"
               id="message"
               placeholder="Saisir votre message . . ."
@@ -198,7 +212,7 @@ export default function Messages() {
               onBlur={handleTextareaBlur}
             ></textarea>
             <Image
-              className="z-10 bottom-1 right-1 absolute rounded shadow size-12 shadow-backgroundDark dark:shadow-background border bg-background  border-borderColor dark:border-borderColorDark"
+              className="z-10 bottom-1/2 right-2 translate-y-1/2 absolute rounded shadow size-8 shadow-backgroundDark dark:shadow-background border bg-background  border-borderColor dark:border-borderColorDark"
               src="/logo/chevron_up.svg"
               alt="Logo facil'iti"
               title="Facil'iti"
@@ -207,6 +221,25 @@ export default function Messages() {
             />
           </div>
         </section>
+      </div>
+      <div
+        onClick={toggleOpenFooter}
+        className="absolute bottom-0 left-0 translate-y-full border borderShadow"
+      >
+        <Image
+          className={`animate-spin-slow h-6 w-6 ${
+            openFooter ? 'transform rotate-180' : ''
+          }`}
+          src="/logo/chevron_up.svg"
+          alt={openFooter ? 'Logo chevron up' : 'Logo chevron down'}
+          title={
+            openFooter
+              ? 'Logo pour fermer le pied de page'
+              : 'Logo pour voir le pied de page'
+          }
+          width={24}
+          height={24}
+        />
       </div>
     </section>
   );
