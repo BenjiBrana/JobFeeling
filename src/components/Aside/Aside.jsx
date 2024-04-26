@@ -17,7 +17,7 @@ export default function Section() {
         width={120}
         height={120}
       />
-      <div>
+      <div className="px-2">
         <h2
           onClick={toggleOpenContainer}
           className="subTitleSectionPage flex gap-4 justify-center items-center"

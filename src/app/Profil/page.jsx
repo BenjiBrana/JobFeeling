@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import Candidature from '@/components/Candidature/Candidature';
 import CurriculumVitae from '@/components/CurriculumVitae/CurriculumVitae';
 import Aside from '@/components/Aside/Aside';
@@ -8,7 +7,7 @@ export default function Profil() {
   return (
     <section className="sectionPage">
       <h1 className="titleSectionPage">Mon profil</h1>
-      <div className="flex w-full flex-row flex-wrap items-center gap-4 h-12 mobile:px-4 justify-between my-4">
+      <div className="flex w-full flex-row flex-wrap items-center gap-4 h-12 mobile:px-4 tablette:justify-center justify-between my-4">
         <span className=" text-textColor ml-4 dark:text-textColorDark text-2xl font-titleFont ">
           Bonjour Benjamin
         </span>

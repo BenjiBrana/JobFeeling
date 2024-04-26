@@ -80,7 +80,7 @@
 }
 
 .conversations {
-  @apply flex tablette:flex-col w-full items-center gap-4 lg:pr-1 xl:pr-4 bg-background dark:bg-backgroundDark;
+  @apply flex flex-col tablette:flex-row tablette:w-auto w-full items-center gap-4 lg:pr-1 xl:pr-4 bg-background dark:bg-backgroundDark tablette:gap-2 tablette:align-middle tablette:pr-4 tablette:text-center py-2 justify-start;
 }
 
 .message {
