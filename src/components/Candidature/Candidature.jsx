@@ -39,14 +39,14 @@ export default function Candidature() {
   };
 
   return (
-    <article className="card borderShadow">
+    <article className="card flex-col borderShadow">
       <h2
         onClick={toggleOpenContainer}
         className="subTitleSectionPage cursor-pointer flex gap-4 justify-center items-center"
       >
         Mes candidatures
         <Image
-          className={`animate-spin-slow h-6 w-6 ${
+          className={`animate-spin-slow dark:shadow dark:bg-background dark:rounded-full dark:p-2 h-6 w-6 ${
             openContainer ? 'transform rotate-180' : ''
           }`}
           src="/logo/chevron_down.svg"
@@ -68,7 +68,7 @@ export default function Candidature() {
         }`}
       >
         <select
-          className="flex-1 my-4 max-w-full bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark border border-borderColor dark:border-borderColorDark p-2 rounded-md"
+          className="flex-1 my-4 max-w-full bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark border borderShadow p-2 rounded-md"
           onChange={(e) =>
             handleSelectAnnonce(parseInt(e.target.value))
           }

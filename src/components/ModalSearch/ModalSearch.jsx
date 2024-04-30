@@ -1,7 +1,22 @@
+import React from 'react';
 export default function ModalSearch(
   { closeModal },
   { handleSubmit }
 ) {
+  const metierRef = React.useRef();
+  const lieuRef = React.useRef();
+
+  const handleMetierClick = () => {
+    if (metierRef.current) {
+      metierRef.current.removeAttribute('readonly');
+    }
+  };
+
+  const handleLieuClick = () => {
+    if (lieuRef.current) {
+      lieuRef.current.removeAttribute('readonly');
+    }
+  };
   return (
     <div className="fixed flex flex-col text-textColor dark:text-textColorDark top-0 justify-start items-center left-0 z-50 w-full h-full bg-background dark:bg-backgroundDark">
       <button
@@ -21,7 +36,7 @@ export default function ModalSearch(
           <div className="flex w-full">
             <div className="groupModal ">
               <label className="pl-2" for="metier">
-                Métier :{' '}
+                Métier :
               </label>
 
               <input
@@ -31,12 +46,15 @@ export default function ModalSearch(
                 name="metier"
                 aria-label="Métier"
                 placeholder="Ex : Développeur web"
+                ref={metierRef}
+                readonly="readonly"
+                onClick={handleMetierClick}
                 required
               />
             </div>
             <div className="groupModal ">
               <label className="pl-2" for="lieu">
-                Lieu :{' '}
+                Lieu :
               </label>
 
               <input
@@ -46,6 +64,9 @@ export default function ModalSearch(
                 name="lieu"
                 aria-label="Lieu"
                 placeholder="Ex : Angoulême"
+                ref={lieuRef}
+                readonly="readonly"
+                onClick={handleLieuClick}
                 required
               />
             </div>

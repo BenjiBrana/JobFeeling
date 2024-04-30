@@ -16,7 +16,7 @@ export default function Section() {
         >
           Filtrer votre recherche
           <Image
-            className={`animate-spin-slow h-6 w-6 ${
+            className={`dark:shadow dark:bg-background dark:rounded-full dark:p-2  ${
               openContainer ? 'transform rotate-180' : ''
             }`}
             src="/logo/chevron_down.svg"

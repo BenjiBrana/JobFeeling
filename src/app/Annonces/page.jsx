@@ -29,7 +29,7 @@ export default function Notifications() {
   return (
     <section className="w-full flex flex-col min-h-screen justify-between">
       <div className="sectionPage">
-        <h1 className="titleSectionPage">Mes annonces</h1>
+        <h1 className="titleSectionPage">Annonces</h1>
         <div className="w-full h-full tablette:my-12 flex flex-col tablette:items-center lg:items-center xl:flex-row xl:items-start pt-4 px-4 gap-2 ">
           <FiltreSide />
           <section className="relative tablette:w-full w-10/12 border borderShadow h-screen flex flex-col pt-4 bg-secondary dark:bg-secondaryDark">
@@ -49,7 +49,7 @@ export default function Notifications() {
                         width={64}
                         height={64}
                       />
-                      <h3 className="font-titleFont text-xl font-bold">
+                      <h3 className="font-titleFont text-center text-xl font-bold">
                         {annonce.titleAnnonce}
                       </h3>
                     </div>

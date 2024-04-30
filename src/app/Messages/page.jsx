@@ -178,7 +178,7 @@ export default function Messages() {
                 }
               })}
             </div>
-            <div className="flex flex-col overflow-y-auto w-full font-textFont text-lg">
+            <div className="flex flex-col overflow-y-auto p-2 w-full font-textFont text-lg">
               {messages.map((message, index) => (
                 <div
                   key={index}

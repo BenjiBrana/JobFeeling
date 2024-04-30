@@ -66,7 +66,7 @@ export default function ImgPrincipal() {
           </div>
           <div className="cursor-pointer rounded-r-lg mx-6 tablette:w-8 lg:w-10 mobile:hidden">
             <Image
-              className="cursor-pointer"
+              className="cursor-pointer dark:shadow dark:bg-background dark:rounded-full dark:p-2 "
               src="/logo/search.svg"
               alt="Logo search"
               title="Logo de recherche"

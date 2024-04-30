@@ -24,14 +24,14 @@ export default function CurriculumVitae() {
     setOpenContainer(!openContainer);
   };
   return (
-    <article className="card borderShadow">
+    <article className="card flex-col borderShadow">
       <h2
         onClick={toggleOpenContainer}
         className="subTitleSectionPage cursor-pointer flex gap-4 justify-center items-center"
       >
         Mon CV
         <Image
-          className={`animate-spin-slow h-6 w-6 ${
+          className={`dark:shadow dark:bg-background dark:rounded-full dark:p-2  ${
             openContainer ? 'transform rotate-180' : ''
           }`}
           src="/logo/chevron_down.svg"

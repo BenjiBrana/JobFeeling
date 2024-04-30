@@ -34,19 +34,24 @@ export default function Notifications({ closeNotification }) {
         height={30}
       />
       <>
-        <article className=" flex flex-col items-center w-full h-screen">
+        <article className=" flex flex-col items-center w-full h-screen tablette:px-2">
           <h2 className="titleSectionPage">Notification</h2>
           {notifications.map((notification, index) => (
-            <div key={index} className="card relative border my-2">
-              <h3>{notification.titleAnnonce}</h3>
-              <p>{notification.contenuAnnonce}</p>
-              <span>
-                {`${notification.dateAnnonce} à
+            <div
+              key={index}
+              className="card borderShadow flex flex-row justify-between items-center tablette:w-full border my-2"
+            >
+              <div>
+                <h3>{notification.titleAnnonce}</h3>
+                <p>{notification.contenuAnnonce}</p>
+                <span>
+                  {`${notification.dateAnnonce} à
                 ${notification.heureAnnonce}`}
-              </span>
+                </span>
+              </div>
               <Image
+                className="dark:shadow dark:bg-background dark:rounded-full dark:p-2 "
                 id="closeIcon"
-                className="absolute right-2 top-1/2 -translate-y-1/2 "
                 src="/logo/close.svg"
                 alt="Logo fermeture"
                 title="Logo pour fermer le menu"
