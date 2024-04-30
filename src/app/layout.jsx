@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   const [showNotifications, setShowNotifications] = useState(false);
   return (
     <html lang="fr">
-      <Head>
+      <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="canonical" href="https://jobfeeling.vercel.app/" />
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         <meta http-equiv="cache-control" content="no-cache" />
         <meta name="robots" content="index,follow" />
         <meta property="og:site_name" content="JobFeeling" />
-      </Head>
+      </head>
       <body
         id="top"
         className="bg-background dark:bg-backgroundDark font-textFont"
