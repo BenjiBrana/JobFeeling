@@ -7,17 +7,18 @@ import FilAriane from '@/components/FilAriane/FilAriane';
 import ArrowTop from '@/components/ArrowTop/ArrowTop';
 import Notifications from './Annonces/page';
 import Cookie from '@/components/Cookies/Cookies';
-
+const metadata = {
+  title: 'JobFeeling',
+  description:
+    'Trouvez le job de vos rêves avec JobFeeling ! Notre plateforme de recrutement en ligne vous connecte avec les meilleurs employeurs dans votre domaine. Commencez votre nouvelle carrière aujourd’hui avec JobFeeling',
+};
 export default function RootLayout({ children }) {
   const [showNotifications, setShowNotifications] = useState(false);
   return (
     <html lang="fr">
       <Head>
-        <title>JobFeeling</title>
-        <meta
-          name="description"
-          content="Trouvez le job de vos rêves avec JobFeeling ! Notre plateforme de recrutement en ligne vous connecte avec les meilleurs employeurs dans votre domaine. Commencez votre nouvelle carrière aujourd’hui avec JobFeeling"
-        />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
         <link rel="canonical" href="https://jobfeeling.vercel.app/" />
         <meta
           name="twitter:title"
