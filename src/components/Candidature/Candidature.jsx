@@ -42,7 +42,7 @@ export default function Candidature() {
     <article className="card borderShadow">
       <h2
         onClick={toggleOpenContainer}
-        className="subTitleSectionPage flex gap-4 justify-center items-center"
+        className="subTitleSectionPage cursor-pointer flex gap-4 justify-center items-center"
       >
         Mes candidatures
         <Image

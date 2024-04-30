@@ -36,11 +36,8 @@ export default function Footer({ open, toggleOpen }) {
 
   return (
     <footer
-      class={` 
-    bg-secondary dark:bg-secondaryDark text-textColor dark:text-textColorDark border-t border-borderColor dark:border-borderColorDark px-20  tablette:flex-col tablette:items-center justify-between p-5 mt-8 tablette:gap-8 ${
-      open ? 'flex' : 'hidden'
-    }`}
-      onClick={toggleOpen}
+      class="
+    bg-secondary dark:bg-secondaryDark text-textColor dark:text-textColorDark border-t border-borderColor dark:border-borderColorDark px-20 flex  tablette:flex-col tablette:items-center justify-between p-5 mt-8 tablette:gap-8 "
     >
       <div class="flex flex-col items-center gap-4 justify-center tablette:order-4">
         <h2 className="font-bold text-2xl">JobFeeling</h2>

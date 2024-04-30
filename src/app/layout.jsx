@@ -5,14 +5,10 @@ import React, { useState } from 'react';
 import Header from '@/components/Header/Header';
 import FilAriane from '@/components/FilAriane/FilAriane';
 import ArrowTop from '@/components/ArrowTop/ArrowTop';
-import Footer from '@/components/Footer/Footer';
+import Notifications from './Annonces/page';
 
 export default function RootLayout({ children }) {
-  const [openFooter, setOpenFooter] = useState(false);
-  const toggleOpenFooter = () => {
-    setOpenFooter(!openFooter);
-  };
-
+  const [showNotifications, setShowNotifications] = useState(false);
   return (
     <html lang="fr">
       <Head>
@@ -22,13 +18,20 @@ export default function RootLayout({ children }) {
         id="top"
         className="bg-background dark:bg-backgroundDark font-textFont"
       >
-        <Header />
+        <Header
+          showNotifications={showNotifications}
+          setShowNotifications={setShowNotifications}
+        />
         <FilAriane />
         <ArrowTop />
-        <main className="flex flex-col min-h-screen justify-between">
+        <main className="w-full flex flex-col min-h-screen justify-between">
+          {showNotifications && (
+            <Notifications
+              setShowNotifications={setShowNotifications}
+            />
+          )}
           {children}
         </main>
-        <Footer open={openFooter} toggleOpen={toggleOpenFooter} />
       </body>
     </html>
   );

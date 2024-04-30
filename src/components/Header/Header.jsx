@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Notifications from '@/components/Notifications/Notifications';
 
 export default function Header() {
   /* indique si menu ouvert (fermer par defaut)*/
@@ -51,11 +52,23 @@ export default function Header() {
 
   const items = [
     { id: 'Annonces', name: 'Annonces' },
-    { id: 'Notifications', name: 'Notifications' },
     { id: 'Messages', name: 'Messages' },
     { id: 'Profil', name: 'Profil' },
   ];
-
+  /* Gestion ouverture/fermeture notification*/
+  const [showNotifications, setShowNotifications] = useState(false);
+  function toggleNotification() {
+    setShowNotifications(!showNotifications);
+    if (!showNotifications) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  }
+  const closeNotification = () => {
+    setShowNotifications(false);
+    document.body.classList.remove('overflow-hidden');
+  };
   return (
     <header
       className={`flex items-center px-16  shadow shadow-backgroundDark w-full justify-between tablette:px-8 mobile:px-1 relative border-b border-borderColor dark:border-borderColorDark  font-textFont text-textColor dark:text-textColorDark bg-secondary dark:bg-secondaryDark ${
@@ -64,8 +77,11 @@ export default function Header() {
           : 'flex-row '
       }`}
     >
-      <div className=" cursor-pointer transition-all hover:scale-105">
-        <Link href="/">
+      <div className="flex gap-4 ">
+        <Link
+          className="cursor-pointer transition-all hover:scale-105"
+          href="/"
+        >
           <Image
             className={`my-1 ${menuOpen ? 'auto ' : 'h-16 w-16 '}`}
             src="/images/jobfeeling_mini.webp"
@@ -75,7 +91,23 @@ export default function Header() {
             height={84}
           />
         </Link>
+        <button
+          onClick={toggleNotification}
+          className="cursor-pointer transition-all hover:scale-105"
+          type="button"
+        >
+          <Image
+            id="menuIcon"
+            className=" h-10 w-10 dark:bg-textColorDark hover:bg-background rounded-full p-1 shadow-md shadow-black dark:shadow-white"
+            src="/logo/notification.svg"
+            alt="Notification"
+            title="Logo pour les notifications"
+            width={30}
+            height={30}
+          />
+        </button>
       </div>
+
       <nav
         className={`flex justify-between  items-start ${
           menuOpen
@@ -95,7 +127,11 @@ export default function Header() {
               className={`itemMenu  ${menuOpen ? 'fade-out' : ''}`}
               key={item.id}
             >
-              <Link href={`/${item.id}`} onClick={toggleMenu}>
+              <Link
+                className="p-4"
+                href={`/${item.id}`}
+                onClick={toggleMenu}
+              >
                 {item.name}
               </Link>
             </li>
@@ -130,6 +166,9 @@ export default function Header() {
           )}
         </div>
       </nav>
+      {showNotifications && (
+        <Notifications closeNotification={closeNotification} />
+      )}
     </header>
   );
 }

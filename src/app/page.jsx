@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import SectionPrincipal from '@/components/SectionPrincipal/SectionPrincipal';
 import ArticleAccueil from '@/components/ArticleAccueil/ArticleAccueil';
+import Footer from '@/components/Footer/Footer';
 
 export default function Page({ children }) {
   useEffect(() => {
@@ -32,10 +33,13 @@ export default function Page({ children }) {
   }, []);
 
   return (
-    <main className="w-full">
-      <SectionPrincipal />
-      <ArticleAccueil />
-      {children}
-    </main>
+    <>
+      <main className="w-full flex flex-col min-h-screen justify-between">
+        <SectionPrincipal />
+        <ArticleAccueil />
+        {children}
+      </main>
+      <Footer />
+    </>
   );
 }

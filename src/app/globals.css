@@ -18,7 +18,7 @@
 }
 
 .itemMenu {
-  @apply font-bold text-lg text-center uppercase leading-10 w-auto px-4 py-1 rounded-md shadow-md border border-borderColor dark:border-borderColorDark bg-hoverColor dark:bg-hoverColorDark scale-95 transition-all hover:scale-110;
+  @apply font-bold text-lg text-center uppercase leading-10 w-auto rounded-md shadow-md border border-borderColor dark:border-borderColorDark bg-hoverColor dark:bg-hoverColorDark scale-95 transition-all hover:scale-110 hover:bg-background dark:hover:bg-backgroundDark hover:text-backgroundDark dark:hover:text-background;
 }
 
 .group {

@@ -20,7 +20,7 @@ export default function Section() {
       <div className="px-2">
         <h2
           onClick={toggleOpenContainer}
-          className="subTitleSectionPage flex gap-4 justify-center items-center"
+          className="subTitleSectionPage cursor-pointer flex gap-4 justify-center items-center"
         >
           Mes informations
           <Image
