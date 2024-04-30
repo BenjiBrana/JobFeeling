@@ -97,7 +97,7 @@ export default function Header() {
           type="button"
         >
           <Image
-            id="menuIcon"
+            id="notificationIcon"
             className=" h-10 w-10 dark:bg-textColorDark hover:bg-background rounded-full p-1 shadow-md shadow-black dark:shadow-white"
             src="/logo/notification.svg"
             alt="Notification"

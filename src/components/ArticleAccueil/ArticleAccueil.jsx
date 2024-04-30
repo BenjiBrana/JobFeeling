@@ -6,7 +6,7 @@ export default function Section() {
         <h2 className="mt-20 w-full  flex flex-row items-center justify-between border-t border-b border-borderColor dark:border-borderColorDark  py-2 text-left text-textColor dark:text-textColorDark  text-4xl tablette:text-3xl mobile:text-2xl font-bold font-titleFont ">
           Notre conseil du jour
           <Image
-            id="iconIdee"
+            id="iconConseil"
             className=" h-16 w-16  opacity-80 border shadow shadow-backgroundDark hover:border-2"
             src="/logo/logo_conseil.webp"
             alt="Logo conseil"
