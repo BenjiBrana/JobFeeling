@@ -20,6 +20,7 @@ export default function ImgPrincipal() {
         src="/images/imgPrincipale.webp"
         alt="Image principal"
         title="Image de présentation"
+        priority
         width={1440}
         height={900}
       />

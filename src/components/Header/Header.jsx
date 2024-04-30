@@ -83,7 +83,9 @@ export default function Header() {
           href="/"
         >
           <Image
-            className={`my-1 ${menuOpen ? 'auto ' : 'h-16 w-16 '}`}
+            className={`my-1 rounded-full ${
+              menuOpen ? 'auto ' : 'h-16 w-16 '
+            }`}
             src="/images/jobfeeling_mini.webp"
             alt="Logo JobFeeling"
             title="Logo officiel de JobFeeling"
