@@ -7,7 +7,7 @@ export default function Section() {
           Notre conseil du jour
           <Image
             id="iconConseil"
-            className=" h-16 w-16  opacity-80 border shadow shadow-backgroundDark hover:border-2"
+            className=" h-16 w-16 opacity-80 border shadow shadow-backgroundDark hover:border-2"
             src="/logo/logo_conseil.webp"
             alt="Logo conseil"
             title="Logo de conseil"
