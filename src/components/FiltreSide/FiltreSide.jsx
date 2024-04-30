@@ -8,7 +8,7 @@ export default function Section() {
     setOpenContainer(!openContainer);
   };
   return (
-    <aside className=" sideBar borderShadow">
+    <aside className=" h-full flex flex-col mb-8 left-0 bg-secondary dark:bg-secondaryDark 2xl:w-2/12 xl:w-3/12 lg:w-5/6 tablette:w-full tablette:items-center borderShadow">
       <div className="py-4 px-2">
         <h2
           onClick={toggleOpenContainer}
@@ -33,20 +33,20 @@ export default function Section() {
           />
         </h2>
         <form
-          className={`articleHeader ${
+          className={`articleHeader pt-4 ${
             openContainer ? 'flex' : 'hidden'
           }`}
         >
           <label
             for="jobType"
-            class="block text-sm font-medium text-gray-700"
+            class="flex font-bold  text-sm text-textColor dark:text-textColorDark"
           >
             Type de travail
           </label>
           <select
             id="jobType"
             name="jobType"
-            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            class="mt-1 flex w-full py-2 px-3 mb-4 border borderShadow bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark  focus:outline-none focus:ring-textColor dark:focus:ring-textColorDark focus:border-textColor dark:focus:border-textColorDark sm:text-sm"
           >
             <option>CDI</option>
             <option>CDD</option>
@@ -57,14 +57,14 @@ export default function Section() {
 
           <label
             for="industry"
-            class="block text-sm font-medium text-gray-700"
+            class="flex font-bold  text-sm text-textColor dark:text-textColorDark"
           >
             Secteur d'activité
           </label>
           <select
             id="industry"
             name="industry"
-            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            class="mt-1 flex w-full py-2 px-3 mb-4 border borderShadow bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark  focus:outline-none focus:ring-textColor dark:focus:ring-textColorDark focus:border-textColor dark:focus:border-textColorDark sm:text-sm"
           >
             <option>Tout</option>
             <option>Administration, fonction publique</option>
@@ -95,7 +95,7 @@ export default function Section() {
 
           <label
             for="location"
-            class="block text-sm font-medium text-gray-700"
+            class="flex font-bold  text-sm text-textColor dark:text-textColorDark"
           >
             Lieu
           </label>
@@ -103,13 +103,13 @@ export default function Section() {
             type="text"
             id="location"
             name="location"
-            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            class="mt-1 flex w-full py-2 px-3 mb-4 border borderShadow bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark  focus:outline-none focus:ring-textColor dark:focus:ring-textColorDark focus:border-textColor dark:focus:border-textColorDark sm:text-sm"
             placeholder="Entrez un lieu"
           />
 
           <label
             for="salary"
-            class="block text-sm font-medium text-gray-700"
+            class="flex font-bold  text-sm text-textColor dark:text-textColorDark"
           >
             Salaire minimum
           </label>
@@ -117,7 +117,7 @@ export default function Section() {
             type="number"
             id="salary"
             name="salary"
-            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            class="mt-1 flex w-full py-2 px-3 mb-4 border borderShadow bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark  focus:outline-none focus:ring-textColor dark:focus:ring-textColorDark focus:border-textColor dark:focus:border-textColorDark sm:text-sm"
             placeholder="Entrez un salaire"
           />
         </form>

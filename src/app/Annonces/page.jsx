@@ -27,10 +27,10 @@ export default function Notifications() {
     },
   ];
   return (
-    <main className="w-full flex flex-col min-h-screen justify-between">
+    <section className="w-full flex flex-col min-h-screen justify-between">
       <div className="sectionPage">
         <h1 className="titleSectionPage">Mes annonces</h1>
-        <div className="containerSectionPage gap-2 flex">
+        <div className="w-full h-full tablette:my-12 flex flex-col tablette:items-center lg:items-center xl:flex-row xl:items-start pt-4 px-4 gap-2 ">
           <FiltreSide />
           <section className="relative tablette:w-full w-10/12 border borderShadow h-screen flex flex-col pt-4 bg-secondary dark:bg-secondaryDark">
             <div className="flex flex-col overflow-y-auto w-full font-textFont text-lg">
@@ -81,6 +81,6 @@ export default function Notifications() {
         </div>
       </div>
       <Footer />
-    </main>
+    </section>
   );
 }
