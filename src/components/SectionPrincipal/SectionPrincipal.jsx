@@ -16,7 +16,7 @@ export default function ImgPrincipal() {
   return (
     <div className="relative w-full h-auto text-textColor dark:text-textColorDark rounded-b-lg border-b shadow shadow-backgroundDark">
       <Image
-        className="w-full h-screen object-cover"
+        className="w-full h-screen tablette:h-128 object-cover"
         src="/images/imgPrincipale.webp"
         alt="Image principal"
         title="Image de présentation"

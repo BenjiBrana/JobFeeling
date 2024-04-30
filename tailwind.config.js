@@ -21,6 +21,9 @@ module.exports = {
         tablette: { max: '1023px' },
         mobile: { max: '639px' },
       },
+      spacing: {
+        128: '32rem',
+      },
       colors: {
         background: '#F4F4F4',
         backgroundDark: '#0A0A0A',
