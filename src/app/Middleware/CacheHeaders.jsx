@@ -5,10 +5,13 @@ export default function cacheHeaders(req, res, next) {
 
   /* Ajouter l'en-tête Cache-Control existant si aucun en-tête n'est défini */
   if (!res.getHeader('Cache-Control')) {
+    console.log(`Setting Cache-Control for ${req.url}`);
     res.setHeader(
       'Cache-Control',
       'public, max-age=31536000, must-revalidate'
     );
+  } else {
+    console.log(`Cache-Control header already set for ${req.url}`);
   }
 
   /* Appeler next() pour passer au middleware suivant*/
