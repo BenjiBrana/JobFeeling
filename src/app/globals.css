@@ -10,7 +10,7 @@
 
 /* Composants */
 .imgCircle {
-  @apply border shadow-xl rounded-full;
+  @apply border shadow-xl rounded-full mobile:size-10;
 }
 
 .arrowTop {

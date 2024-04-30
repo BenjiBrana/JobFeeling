@@ -51,7 +51,7 @@ export default function Footer({ open, toggleOpen }) {
           height={104}
         />
         <h3 className="hover:font-bold">©JobFeeling | 2024</h3>
-        <h4 className="hover:font-bold">
+        <h4 className="hover:font-bold text-center">
           <a
             href="https://branabenjamin.fr"
             target="_blank"
@@ -75,7 +75,7 @@ export default function Footer({ open, toggleOpen }) {
           Plan du site
         </a>
       </div>
-      <div className="flex flex-col justify-start mt-4 gap-4 tablette:order-2">
+      <div className="flex flex-col justify-start mobile:justify-center mt-4 gap-4 tablette:order-2">
         <a
           href="#"
           className="flex flex-row items-center gap-4 hover:font-bold"
