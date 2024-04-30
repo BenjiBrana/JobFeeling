@@ -13,24 +13,42 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <Head>
-        <title></title>
+        <title>JobFeeling</title>
+        <meta
+          name="description"
+          content="Trouvez le job de vos rêves avec JobFeeling ! Notre plateforme de recrutement en ligne vous connecte avec les meilleurs employeurs dans votre domaine. Commencez votre nouvelle carrière aujourd’hui avec JobFeeling"
+        />
         <link rel="canonical" href="https://jobfeeling.vercel.app/" />
         <meta
-          property="og:title"
-          content="JobFeeling - Solutions Web Innovantes"
+          name="twitter:title"
+          content="JobFeeling - Votre plateforme de recrutement en ligne"
         />
+        <meta
+          name="twitter:description"
+          content="Trouvez le job de vos rêves avec JobFeeling ! Notre plateforme de recrutement en ligne vous connecte avec les meilleurs employeurs dans votre domaine. Commencez votre nouvelle carrière aujourd'hui avec JobFeeling."
+        />
+        <meta name="twitter:image" content="images/jobfeeling.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:title" content="Titre de votre contenu" />
         <meta
           property="og:description"
-          content="La Rural Web Factory propose des services numériques complets, incluant la transformation numérique, les audits, le webmarketing, la publicité, le branding, le développement web et le community management."
+          content="Description de votre contenu"
         />
-        <meta
-          property="og:image"
-          content="https://jobfeeling.vercel.app/_next/image?url=%2Flogo%2Fcircle_rwf.webp&w=96&q=75"
-        />
+        <meta property="og:image" content="images/jobfeeling.webp" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://jobfeeling.vercel.app/"
         />
+        <meta property="og:locale" content="fr_FR" />
+        <meta
+          name="keywords"
+          content="emploi, recrutement, carrière, JobFeeling"
+        />
+        <meta name="author" content="Nom de votre entreprise" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta name="robots" content="index,follow" />
+        <meta property="og:site_name" content="JobFeeling" />
       </Head>
       <body
         id="top"
