@@ -12,7 +12,7 @@ export default function Notifications() {
       dateAnnonce: '23/04/2024',
       description:
         "Rejoignez notre équipe chez SocialHub en tant que Développeur Web, pour contribuer à des projets innovants. Nous recherchons des passionnés capables de résoudre des défis techniques, avec une expérience en développement web (2 ans minimum), une maîtrise de HTML, CSS, JavaScript, et des frameworks tels que React ou Angular. La capacité à travailler en équipe, résoudre des problèmes et s'adapter rapidement aux nouvelles technologies est essentielle. Une expérience antérieure avec les CMS et un portefeuille de projets ou de contributions open source seraient un plus. Rejoignez-nous chez SocialHub pour développer vos compétences au sein d'une équipe talentueuse.",
-      criteres: ['Bordeaux', 'Symfony', "2 ans d'expériences"],
+      criteres: ['Bordeaux', 'React', "2 ans d'expériences"],
     },
     {
       id: 'annonce2',
@@ -22,8 +22,8 @@ export default function Notifications() {
       titleAnnonce: 'Greenspace : Recherche Développeur Web',
       dateAnnonce: '24/04/2024',
       description:
-        "Rejoignez notre équipe chez Greenspace en tant que Développeur Web, pour contribuer à des projets innovants. Nous recherchons des passionnés capables de résoudre des défis techniques, avec une expérience en développement web (2 ans minimum), une maîtrise de HTML, CSS, JavaScript, et des frameworks tels que React ou Angular. La capacité à travailler en équipe, résoudre des problèmes et s'adapter rapidement aux nouvelles technologies est essentielle. Une expérience antérieure avec les CMS et un portefeuille de projets ou de contributions open source seraient un plus. Rejoignez-nous chez SocialHub pour développer vos compétences au sein d'une équipe talentueuse.",
-      criteres: ['Angoulême', 'React', "2 ans d'expériences"],
+        "Rejoignez notre équipe chez Greenspace en tant que Développeur Web, Opportunité pour un développeur Symfony expérimenté de rejoindre une entreprise innovante dans le domaine du web. Le candidat idéal aura au moins 2 ans d'expérience en développement web, une maîtrise de Symfony, ainsi que des compétences en PHP, HTML, CSS et JavaScript. Offre comprenant un environnement de travail stimulant, des opportunités de croissance professionnelle et une rémunération compétitive. Postulez dès maintenant en envoyant votre CV et lettre de motivation.",
+      criteres: ['Angoulême', 'Symfony', "2 ans d'expériences"],
     },
   ];
   return (

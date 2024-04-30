@@ -37,6 +37,13 @@
   @apply cursor-pointer border border-borderColor dark:border-borderColorDark text-textColor dark:text-textColor px-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark dark:active:border-borderColor;
 }
 
+.h3Style {
+  @apply font-titleFont font-bold text-lg mobile:text-base
+}
+
+.btnCookie {
+  @apply px-4 py-2 rounded-md text-black font-bold hover:scale-110 cursor-pointer border;
+}
 
 .groupForm {
   @apply px-6 text-xl tablette:py-6 mobile:w-full flex flex-col w-3/4;
@@ -45,6 +52,8 @@
 .inputForm {
   @apply inputStyle px-3 py-2 mt-2 focus:outline-none mobile:text-sm focus:border-borderColor shadow shadow-backgroundDark dark:shadow-background;
 }
+
+
 
 .sectionPage {
   @apply flex flex-col w-full h-full px-16 mobile:px-0 bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark;

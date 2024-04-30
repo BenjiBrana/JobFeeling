@@ -62,7 +62,7 @@ export default function Footer({ open, toggleOpen }) {
         </h4>
       </div>
       <div class="flex flex-col tablette:flex-row mobile:flex-col gap-4 justify-around items-start tablette:order-3">
-        <a className="hover:font-bold" href="/mentions-legales">
+        <a className="hover:font-bold" href="/MentionsLegales">
           Mentions légales
         </a>
         <a className="hover:font-bold" href="/confidentialite">
@@ -71,13 +71,13 @@ export default function Footer({ open, toggleOpen }) {
         <a className="hover:font-bold" href="/cookies">
           Cookies
         </a>
-        <a className="hover:font-bold" href="/plan-du-site">
+        <a className="hover:font-bold" href="/PlanDuSite">
           Plan du site
         </a>
       </div>
       <div className="flex flex-col justify-start mobile:justify-center mt-4 gap-4 tablette:order-2">
         <a
-          href="#"
+          href="/Accessibilite"
           className="flex flex-row items-center gap-4 hover:font-bold"
         >
           <Image
@@ -91,7 +91,7 @@ export default function Footer({ open, toggleOpen }) {
           <p>Accessibilité : non conforme</p>
         </a>
         <a
-          href="#"
+          href="/Faciliti"
           className="flex flex-row items-center gap-4 hover:font-bold"
         >
           <Image
