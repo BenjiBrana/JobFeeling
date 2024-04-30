@@ -14,7 +14,7 @@ export default function Messages() {
     },
     {
       id: 'conversation2',
-      conversationUrl: '/images/img_profil.webp',
+      conversationUrl: '/images/img_profil2.webp',
       titleImgConversation: 'conversation 2',
       utilisateurLastName: 'Breton LudovicBreton',
       utilisateurFirstName: 'Ludovic',
@@ -32,7 +32,7 @@ export default function Messages() {
     },
     {
       id: 'conversation4',
-      conversationUrl: '/images/img_profil.webp',
+      conversationUrl: '/images/img_profil2.webp',
       titleImgConversation: 'conversation 4',
       utilisateurLastName: 'Breton',
       utilisateurFirstName: 'Ludovic',
@@ -50,7 +50,7 @@ export default function Messages() {
     },
     {
       id: 'conversation6',
-      conversationUrl: '/images/img_profil.webp',
+      conversationUrl: '/images/img_profil2.webp',
       titleImgConversation: 'conversation 6',
       utilisateurLastName: 'Breton',
       utilisateurFirstName: 'Ludovic',
@@ -60,7 +60,7 @@ export default function Messages() {
   const messages = [
     {
       id: 'message1',
-      messageUrl: '/images/img_profil.webp',
+      messageUrl: '/images/img_profil2.webp',
       titleImg: 'photo de profil 1',
       altImg: "Photo de profil de l'utilisateur 1",
       dateMessage: 'Le 25/04/2024 à 14h38',
@@ -80,7 +80,7 @@ export default function Messages() {
     },
     {
       id: 'message3',
-      messageUrl: '/images/img_profil.webp',
+      messageUrl: '/images/img_profil2.webp',
       titleImg: 'photo de profil 3',
       altImg: "Photo de profil de l'utilisateur 3",
       dateMessage: 'Le 25/04/2024 à 14h42',
@@ -135,7 +135,7 @@ export default function Messages() {
                   className="conversations borderShadow"
                 >
                   <Image
-                    className="rounded shadow shadow-backgroundDark xl:size-20 lg:size-16 dark:shadow-background border  border-borderColor dark:border-borderColorDark"
+                    className="rounded shadow shadow-backgroundDark xl:size-20 lg:size-16 tablette:size-20 dark:shadow-background border  border-borderColor dark:border-borderColorDark"
                     src={conversation.conversationUrl}
                     alt={conversation.altImgConversation}
                     title={conversation.titleImgConversation}
