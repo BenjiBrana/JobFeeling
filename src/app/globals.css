@@ -41,6 +41,10 @@
   @apply font-titleFont font-bold text-lg mobile:text-base
 }
 
+.h2Style {
+  @apply mt-20 w-full mb-4 flex flex-row items-center justify-between py-2 text-left text-textColor dark:text-textColorDark text-3xl tablette:text-3xl mobile:text-2xl font-bold font-titleFont
+}
+
 .btnCookie {
   @apply px-4 py-2 rounded-md text-black font-bold hover:scale-110 cursor-pointer border;
 }

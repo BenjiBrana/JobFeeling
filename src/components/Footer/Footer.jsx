@@ -65,7 +65,7 @@ export default function Footer({ open, toggleOpen }) {
         <a className="hover:font-bold" href="/MentionsLegales">
           Mentions légales
         </a>
-        <a className="hover:font-bold" href="/">
+        <a className="hover:font-bold" href="/Confidentialite">
           Confidentialité
         </a>
         <a className="hover:font-bold" href="/">

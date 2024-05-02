@@ -8,7 +8,7 @@ import ArrowTop from '@/components/ArrowTop/ArrowTop';
 import Notifications from './Annonces/page';
 import Cookie from '@/components/Cookies/Cookies';
 const metadata = {
-  title: 'JobFeeling',
+  title: 'JobFeeling - Votre Job Idéal',
   description:
     'Trouvez le job de vos rêves avec JobFeeling ! Notre plateforme de recrutement en ligne vous connecte avec les meilleurs employeurs dans votre domaine. Commencez votre nouvelle carrière aujourd’hui avec JobFeeling',
 };
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:description"
-          content="Trouvez le job de vos rêves avec JobFeeling ! Notre plateforme de recrutement en ligne vous connecte avec les meilleurs employeurs dans votre domaine. Commencez votre nouvelle carrière aujourd'hui avec JobFeeling."
+          content="Trouvez le job idéal avec JobFeeling! Connectez-vous avec les meilleurs employeurs et lancez votre carrière aujourd’hui."
         />
         <meta name="twitter:image" content="images/jobfeeling.webp" />
         <meta name="twitter:card" content="summary_large_image" />
