@@ -30,7 +30,10 @@ export default function RootLayout({ children }) {
         />
         <meta name="twitter:image" content="images/jobfeeling.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:title" content="Titre de votre contenu" />
+        <meta
+          property="og:title"
+          content="JobFeeling - Votre plateforme de recrutement en ligne"
+        />
         <meta
           property="og:description"
           content="Trouvez le job idéal avec JobFeeling! Connectez-vous avec les meilleurs employeurs et lancez votre carrière aujourd’hui."
@@ -46,9 +49,8 @@ export default function RootLayout({ children }) {
           name="keywords"
           content="emploi, recrutement, carrière, JobFeeling"
         />
-        <meta name="author" content="Nom de votre entreprise" />
+        <meta name="author" content="JobFeeling" />
 
-        <meta name="robots" content="index,follow" />
         <meta property="og:site_name" content="JobFeeling" />
         <meta
           name="google-site-verification"
