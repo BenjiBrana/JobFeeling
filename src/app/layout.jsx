@@ -8,9 +8,9 @@ import ArrowTop from '@/components/ArrowTop/ArrowTop';
 import Notifications from './Annonces/page';
 import Cookie from '@/components/Cookies/Cookies';
 const metadata = {
-  title: 'JobFeeling - Votre Job Idéal',
+  title: 'JobFeeling - Votre job idéal est ici',
   description:
-    'Trouvez le job de vos rêves avec JobFeeling ! Notre plateforme de recrutement en ligne vous connecte avec les meilleurs employeurs dans votre domaine. Commencez votre nouvelle carrière aujourd’hui avec JobFeeling',
+    'Trouvez le job idéal avec JobFeeling! Connectez-vous avec les meilleurs employeurs et lancez votre carrière aujourd’hui.',
 };
 export default function RootLayout({ children }) {
   const [showNotifications, setShowNotifications] = useState(false);
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Titre de votre contenu" />
         <meta
           property="og:description"
-          content="Description de votre contenu"
+          content="Trouvez le job idéal avec JobFeeling! Connectez-vous avec les meilleurs employeurs et lancez votre carrière aujourd’hui."
         />
         <meta property="og:image" content="images/jobfeeling.webp" />
         <meta property="og:type" content="website" />

@@ -113,8 +113,10 @@ export default function ImgPrincipal() {
         </p>
         <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
           Notre mission est simple :
-          <strong>faciliter votre recherche d'emploi</strong>. Que
-          vous soyez à la recherche de votre premier emploi, d'une
+          <strong className="px-2">
+            faciliter votre recherche d'emploi,
+          </strong>
+          que vous soyez à la recherche de votre premier emploi, d'une
           nouvelle opportunité de carrière ou d'un changement de cap,
           JobFeeling est là pour vous aider à chaque étape du
           processus.
