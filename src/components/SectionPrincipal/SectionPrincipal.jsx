@@ -82,11 +82,8 @@ export default function ImgPrincipal() {
 
             <button
               className="bg-background cursor-pointer border border-borderColor dark:border-borderColorDark  dark:text-textColor px-2 mt-2 h-12 w-full rounded-md font-bold hover:border-borderColorDark dark:hover:border-borderColor active:border-borderColorDark dark:active:border-borderColor text-textColor"
-              type="btn"
               id="rechercher"
-              name="rechercher"
               aria-label="rechercher"
-              required
               onClick={handleSubmit}
             >
               Développeur web / Angoulême / . . .
