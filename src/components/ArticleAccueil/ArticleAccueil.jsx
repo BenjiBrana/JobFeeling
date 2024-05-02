@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export default function Section() {
   return (
-    <section className="flex flex-col  w-full px-20 tablette:mx-4 scale-95 hover:scale-100 bg-background dark:bg-backgroundDark ">
+    <section className="sectionPage tablette:mx-4 scale-95 hover:scale-100">
       <h2 className="mt-20 w-full  flex flex-row items-center justify-between border-t border-b border-borderColor dark:border-borderColorDark  py-2 text-left text-textColor dark:text-textColorDark  text-4xl tablette:text-3xl mobile:text-2xl font-bold font-titleFont ">
         Notre conseil du jour
         <Image
@@ -52,9 +52,8 @@ export default function Section() {
             envers le poste et l'entreprise. . . .{' '}
           </p>
           <a
-            className="bg-orange xl:w-2/6 lg:w-1/2  text-textColor text-center font-bold  py-4 borderShadow hover:scale-95"
-            href="#"
-            target="_blank"
+            className="bg-orange xl:w-2/6 lg:w-1/2  text-black text-center font-bold  py-4 borderShadow hover:scale-95"
+            href="/Blog/Article"
           >
             Cliquer pour voir la suite
           </a>

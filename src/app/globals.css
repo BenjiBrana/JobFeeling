@@ -57,7 +57,9 @@
   @apply inputStyle px-3 py-2 mt-2 focus:outline-none mobile:text-sm focus:border-borderColor shadow shadow-backgroundDark dark:shadow-background;
 }
 
-
+.paragraphStyle {
+  @apply text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8
+}
 
 .sectionPage {
   @apply flex flex-col w-full h-full px-16 mobile:px-0 bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark;

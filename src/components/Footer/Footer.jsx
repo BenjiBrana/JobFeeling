@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState } from 'react';
-export default function Footer({ open, toggleOpen }) {
+export default function Footer() {
   const liensReseauxSociaux = [
     {
       id: 'rs1',
@@ -37,7 +37,7 @@ export default function Footer({ open, toggleOpen }) {
   return (
     <footer
       class="
-    bg-secondary dark:bg-secondaryDark text-textColor dark:text-textColorDark border-t border-borderColor dark:border-borderColorDark px-20 flex  tablette:flex-col tablette:items-center justify-between p-5 mt-8 tablette:gap-8 "
+    bg-secondary dark:bg-secondaryDark text-textColor dark:text-textColorDark border-t border-borderColor dark:border-borderColorDark px-20 flex flex-col xl:flex-row items-center xl:items-start justify-between p-5 mt-8 gap-8 xl:gap-0"
     >
       <div class="flex flex-col items-center gap-4 justify-center tablette:order-4">
         <h2 className="font-bold text-2xl">JobFeeling</h2>
@@ -50,8 +50,8 @@ export default function Footer({ open, toggleOpen }) {
           width={104}
           height={104}
         />
-        <h3 className="hover:font-bold">©JobFeeling | 2024</h3>
-        <h4 className="hover:font-bold text-center">
+        <span className="hover:font-bold">©JobFeeling | 2024</span>
+        <h3 className="hover:font-bold text-center">
           <a
             href="https://branabenjamin.fr"
             target="_blank"
@@ -59,23 +59,33 @@ export default function Footer({ open, toggleOpen }) {
           >
             Site réalisé par Brana Benjamin
           </a>
-        </h4>
+        </h3>
       </div>
-      <div class="flex flex-col tablette:flex-row mobile:flex-col gap-4 justify-around items-start tablette:order-3">
-        <a className="hover:font-bold" href="/MentionsLegales">
-          Mentions légales
-        </a>
-        <a className="hover:font-bold" href="/Confidentialite">
-          Confidentialité
-        </a>
-        <a className="hover:font-bold" href="/">
-          Cookies
-        </a>
-        <a className="hover:font-bold" href="/PlanDuSite">
-          Plan du site
-        </a>
+      <div class="tablette:order-3 h-full">
+        <ul className=" flex flex-col tablette:flex-row mobile:flex-col h-full justify-around items-start gap-4">
+          <li>
+            <a className="hover:font-bold" href="/MentionsLegales">
+              Mentions légales
+            </a>
+          </li>
+          <li>
+            <a className="hover:font-bold" href="/Confidentialite">
+              Confidentialité
+            </a>
+          </li>
+          <li>
+            <a className="hover:font-bold" href="/">
+              Cookies
+            </a>
+          </li>
+          <li>
+            <a className="hover:font-bold" href="/PlanDuSite">
+              Plan du site
+            </a>
+          </li>
+        </ul>
       </div>
-      <div className="flex flex-col justify-start mobile:justify-center mt-4 gap-4 tablette:order-2">
+      <div className="flex flex-col justify-start mobile:justify-center gap-4 tablette:order-2">
         <a
           href="/Accessibilite"
           className="flex flex-row items-center gap-4 hover:font-bold"

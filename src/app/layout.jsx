@@ -1,6 +1,5 @@
 'use client';
 import './globals.css';
-import Head from 'next/head';
 import React, { useState } from 'react';
 import Header from '@/components/Header/Header';
 import FilAriane from '@/components/FilAriane/FilAriane';

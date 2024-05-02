@@ -106,14 +106,15 @@ export default function ImgPrincipal() {
         </h2>
         <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
           Chez JobFeeling, nous croyons que chaque individu mérite de
-          trouver le job qui lui correspond parfaitement. C'est
-          pourquoi nous avons créé une plateforme innovante et
-          conviviale qui connecte les candidats aux employeurs de
-          manière efficace et transparente.
+          trouver le <strong className="font-normal">job</strong> qui
+          lui correspond parfaitement. C'est pourquoi nous avons créé
+          une plateforme innovante et conviviale qui connecte les
+          candidats aux employeurs de manière efficace et
+          transparente.
         </p>
         <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
           Notre mission est simple :
-          <strong className="px-2">
+          <strong className="px-2 font-normal">
             faciliter votre recherche d'emploi,
           </strong>
           que vous soyez à la recherche de votre premier emploi, d'une
@@ -124,21 +125,20 @@ export default function ImgPrincipal() {
         <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
           Nous comprenons que le recrutement n'est pas seulement une
           question de compétences, mais aussi de
-          <strong>"feeling"</strong>. C'est pourquoi nous nous
-          efforçons de créer des correspondances basées non seulement
-          sur les qualifications et l'expérience, mais aussi sur la
-          culture d'entreprise et les valeurs personnelles.
+          <strong className="font-normal">"feeling"</strong>. C'est
+          pourquoi nous nous efforçons de créer des correspondances
+          basées non seulement sur les qualifications et l'expérience,
+          mais aussi sur la culture d'entreprise et les valeurs
+          personnelles.
         </p>
         <p>
-          Avec une vaste gamme d'offres d'emploi dans divers secteurs
-          et une interface utilisateur intuitive, JobFeeling rend la
-          recherche d'emploi plus facile que jamais. Rejoignez-nous
-          aujourd'hui et commencez votre voyage vers le job de vos
-          rêves.
+          Avec une vaste gamme d'
+          <strong className="font-normal">offres d'emploi</strong>
+          dans divers secteurs et une interface utilisateur intuitive,
+          JobFeeling rend la recherche d'emploi plus facile que
+          jamais. Rejoignez-nous aujourd'hui et commencez votre voyage
+          vers le job de vos rêves.
         </p>
-        <h3 className=" xl:text-2xl lg:text-xl tablette:text-2xl mobile:text-xl border-borderColor dark:border-borderColorDark mt-4  py-2 text-left text-textColor dark:text-textColorDark font-bold font-titleFont">
-          JobFeeling - Trouvez le job qui vous correspond.
-        </h3>
       </section>
     </>
   );
