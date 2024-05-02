@@ -21,7 +21,7 @@ export default function Section() {
             className="mt-8 tablette:h-auto tablette:w-auto rounded-lg border shadow shadow-backgroundDark"
             src="/images/imgArticle.webp"
             alt="Image de l'article"
-            title="Image de l'article"
+            title="Image de l'article du jour"
             width={600}
             height={600}
           />

@@ -34,11 +34,11 @@ export default function Page({ children }) {
 
   return (
     <>
-      <main className="w-full flex flex-col min-h-screen justify-between">
+      <section className="w-full flex flex-col min-h-screen justify-between">
         <SectionPrincipal />
         <ArticleAccueil />
         {children}
-      </main>
+      </section>
       <Footer />
     </>
   );

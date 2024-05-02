@@ -47,9 +47,17 @@ export default function RootLayout({ children }) {
           content="emploi, recrutement, carrière, JobFeeling"
         />
         <meta name="author" content="Nom de votre entreprise" />
-        <meta http-equiv="cache-control" content="no-cache" />
+        <meta
+          http-equiv="Cache-Control"
+          content="public, max-age=3600"
+        />
+
         <meta name="robots" content="index,follow" />
         <meta property="og:site_name" content="JobFeeling" />
+        <meta
+          name="google-site-verification"
+          content="iHeOMtLn0of22eJdZ56P-bx73RxsX97kb-NpK0Pc-O8"
+        />
       </head>
       <body
         id="top"

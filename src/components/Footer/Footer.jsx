@@ -65,10 +65,10 @@ export default function Footer({ open, toggleOpen }) {
         <a className="hover:font-bold" href="/MentionsLegales">
           Mentions légales
         </a>
-        <a className="hover:font-bold" href="/confidentialite">
+        <a className="hover:font-bold" href="/">
           Confidentialité
         </a>
-        <a className="hover:font-bold" href="/cookies">
+        <a className="hover:font-bold" href="/">
           Cookies
         </a>
         <a className="hover:font-bold" href="/PlanDuSite">
@@ -91,7 +91,7 @@ export default function Footer({ open, toggleOpen }) {
           <p>Accessibilité : non conforme</p>
         </a>
         <a
-          href="/Faciliti"
+          href="/"
           className="flex flex-row items-center gap-4 hover:font-bold"
         >
           <Image
