@@ -4,17 +4,16 @@ export default function Confidentialite() {
   return (
     <>
       <section className="relative sectionPage items-center">
-        <h1 className="titleSectionPage">Confidentialité</h1>
+        <h1 className="titleSectionPage">
+          Politique de Confidentialité
+        </h1>
         <div className="w-1/2 mobile:w-3/4 flex flex-col gap-4 px-2 leading-10 mt-10 items-start">
-          <h1 className="mt-20 w-full mb-4 flex flex-row items-center justify-between py-2 text-left text-textColor dark:text-textColorDark text-3xl tablette:text-3xl mobile:text-2xl font-bold font-titleFont">
-            Politique de Confidentialité
-          </h1>
           <p>
             Chez JobFeeling, nous respectons votre vie privée et nous
-            nous engageons à la protéger. Cette politique de
-            confidentialité explique comment nous collectons,
-            utilisons et protégeons vos informations personnelles
-            lorsque vous utilisez notre site web.
+            nous engageons à la protéger. <br />
+            Cette politique de confidentialité explique comment nous
+            collectons, utilisons et protégeons vos informations
+            personnelles lorsque vous utilisez notre site web.
           </p>
 
           <h2 className="h2Style"> Collecte d'informations</h2>

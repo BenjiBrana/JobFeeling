@@ -18,7 +18,7 @@ export default function FilAriane() {
   return (
     <div className="absolute z-10 bg-white/50 p-2 rounded flex flex-row mt-6 tablette:mt-3 ml-16 text-xl transition-all tablette:ml-8 mobile:ml-1  hover:scale-110">
       {segments.map((pathSegment, index) => (
-        <div className="flex flex-row" id="filAriane" key={index}>
+        <div className="flex flex-row" key={index}>
           <span>
             {pathSegment === '/' ? (
               <Link href="/" key={pathSegment}>
