@@ -26,7 +26,7 @@ export default function Notifications({ closeNotification }) {
       <Image
         onClick={closeNotification}
         id="closeIcon"
-        className="absolute top-1 right-1 h-8 w-8 bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
+        className="absolute top-1 right-1 h-8 w-8 cursor-pointer bg-red-500/70 hover:border-black/50 hover:border-2 rounded-full p-1"
         src="/logo/close.svg"
         alt="Logo supprimer"
         title="Logo pour supprimer la notification"
@@ -50,7 +50,7 @@ export default function Notifications({ closeNotification }) {
                 </span>
               </div>
               <Image
-                className="dark:shadow dark:bg-background dark:rounded-full dark:p-2 "
+                className="dark:shadow dark:bg-background dark:rounded-full cursor-pointer dark:p-2 "
                 id="closeIcon"
                 src="/logo/close.svg"
                 alt="Logo fermeture"

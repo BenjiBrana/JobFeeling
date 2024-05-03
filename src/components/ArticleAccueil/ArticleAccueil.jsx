@@ -1,8 +1,8 @@
 import Image from 'next/image';
 export default function Section() {
   return (
-    <section className="sectionPage tablette:mx-4 scale-95 hover:scale-100">
-      <h2 className="mt-20 w-full  flex flex-row items-center justify-between border-t border-b border-borderColor dark:border-borderColorDark  py-2 text-left text-textColor dark:text-textColorDark  text-4xl tablette:text-3xl mobile:text-2xl font-bold font-titleFont ">
+    <section className=" sectionPage">
+      <h2 className="h2Style border-t border-b border-borderColor dark:border-borderColorDark ">
         Notre conseil du jour
         <Image
           id="iconConseil"
@@ -14,7 +14,7 @@ export default function Section() {
           height={30}
         />
       </h2>
-      <div className="flex flex-row tablette:flex-col  tablette:items-center lg:justify-start  xl:mr-20 2xl:mr-0">
+      <div className="flex flex-row my-8 tablette:flex-col lg:flex-col xl:flex-row lg:items-center tablette:items-center xl:justify-start xl:mr-20 2xl:mr-0">
         <Image
           id="imgArticle"
           className="mt-8 tablette:h-auto tablette:w-auto rounded-lg border shadow shadow-backgroundDark"
@@ -25,7 +25,7 @@ export default function Section() {
           height={600}
         />
 
-        <div className="flex flex-col w-1/2 xl:ml-20 lg:ml-10  tablette:w-full  justify-center">
+        <div className="flex flex-col my-8 w-1/2 xl:ml-20 lg:ml-10 tablette:w-full justify-center">
           <div className="flex flex-row mobile:flex-col items-center gap-8 mb-4">
             <Image
               id="iconIdee"
@@ -49,7 +49,7 @@ export default function Section() {
             réalisations pertinentes. <br />
             Enfin, n'oubliez pas de poser des questions pertinentes à
             votre tour pour montrer votre intérêt et votre engagement
-            envers le poste et l'entreprise. . . .{' '}
+            envers le poste et l'entreprise. . . .
           </p>
           <a
             className="bg-orange xl:w-2/6 lg:w-1/2  text-black text-center font-bold  py-4 borderShadow hover:scale-95"

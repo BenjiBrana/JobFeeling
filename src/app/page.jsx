@@ -35,7 +35,7 @@ export default function Page({ children }) {
 
   return (
     <>
-      <section className="w-full flex flex-col min-h-screen justify-between">
+      <section className="w-auto flex flex-col min-h-screen justify-between">
         <SectionPrincipal />
         <ArticleAccueil />
         <CommentairesClients />

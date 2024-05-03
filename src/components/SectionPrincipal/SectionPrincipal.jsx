@@ -99,13 +99,13 @@ export default function ImgPrincipal() {
           )}
         </div>
       </section>
-      <section className="flex flex-col  w-full px-20 tablette:mx-4 scale-95 hover:scale-100 bg-background dark:bg-backgroundDark ">
+      <section className="sectionPage">
         <h2 className="h2Style">
           Bienvenue sur votre passerelle vers une carrière
           épanouissante, votre plateforme de recrutement en ligne de
           confiance.
         </h2>
-        <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
+        <p className="paragraphStyle pt-8">
           Chez JobFeeling, nous croyons que chaque individu mérite de
           trouver le <strong className="font-normal">job</strong> qui
           lui correspond parfaitement. C'est pourquoi nous avons créé
@@ -113,7 +113,7 @@ export default function ImgPrincipal() {
           candidats aux employeurs de manière efficace et
           transparente.
         </p>
-        <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
+        <p className="paragraphStyle">
           Notre mission est simple :
           <strong className="px-2 font-normal">
             faciliter votre recherche d'emploi,
@@ -123,7 +123,7 @@ export default function ImgPrincipal() {
           JobFeeling est là pour vous aider à chaque étape du
           processus.
         </p>
-        <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
+        <p className="paragraphStyle">
           Nous comprenons que le recrutement n'est pas seulement une
           question de compétences, mais aussi de
           <strong className="font-normal">"feeling"</strong>. C'est
@@ -132,8 +132,8 @@ export default function ImgPrincipal() {
           mais aussi sur la culture d'entreprise et les valeurs
           personnelles.
         </p>
-        <p>
-          Avec une vaste gamme d'
+        <p className="paragraphStyle">
+          Nous comprenons que le recr Avec une vaste gamme d'
           <strong className="font-normal">offres d'emploi</strong>
           dans divers secteurs et une interface utilisateur intuitive,
           JobFeeling rend la recherche d'emploi plus facile que

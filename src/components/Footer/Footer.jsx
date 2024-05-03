@@ -39,7 +39,7 @@ export default function Footer() {
       class="
     bg-secondary dark:bg-secondaryDark text-textColor dark:text-textColorDark border-t border-borderColor dark:border-borderColorDark px-20 flex flex-col xl:flex-row items-center xl:items-start justify-between p-5 mt-8 gap-8 xl:gap-0"
     >
-      <div class="flex flex-col items-center gap-4 justify-center tablette:order-4">
+      <div class="flex flex-col flex-1 items-center gap-4 justify-center tablette:order-4">
         <span className="font-bold text-2xl">JobFeeling</span>
         <Image
           id="logoFooter"
@@ -61,8 +61,8 @@ export default function Footer() {
           </a>
         </h3>
       </div>
-      <div class="tablette:order-3 h-full">
-        <ul className=" flex flex-col tablette:flex-row mobile:flex-col h-full justify-around items-start gap-4">
+      <div class="tablette:order-3 flex-1 h-full">
+        <ul className=" flex flex-col tablette:flex-row mobile:flex-col h-full justify-around items-center gap-4">
           <li>
             <a className="hover:font-bold" href="/MentionsLegales">
               Mentions légales
@@ -85,7 +85,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col justify-start mobile:justify-center gap-4 tablette:order-2">
+      <div className="flex flex-col flex-1 items-center mobile:justify-center gap-4 tablette:order-2">
         <a
           href="/Accessibilite"
           className="flex flex-row items-center gap-4 hover:font-bold"
@@ -115,7 +115,7 @@ export default function Footer() {
           <p> Facil'iti</p>
         </a>
       </div>
-      <div class="flex flex-col items-center gap-4 tablette:order-1">
+      <div class="flex flex-col items-center flex-1 gap-4 tablette:order-1">
         <h2 className="font-bold text-2xl text-center">
           Suivez-nous
         </h2>

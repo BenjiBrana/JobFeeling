@@ -57,10 +57,9 @@ export default function CommentairesClients() {
       prev === commentairesClients.length ? 1 : prev + 1
     );
   };
-
   return (
-    <section className="sectionPage tablette:mx-4 scale-95 hover:scale-100">
-      <h2 className="mt-20 w-full  flex flex-row items-center justify-between border-t border-b border-borderColor dark:border-borderColorDark  py-2 text-left text-textColor dark:text-textColorDark  text-4xl tablette:text-3xl mobile:text-2xl font-bold font-titleFont ">
+    <section className="sectionPage relative">
+      <h2 className="h2Style border-t border-b border-borderColor dark:border-borderColorDark ">
         Avis utilisateur
         <Image
           id="iconConseil"
@@ -72,15 +71,15 @@ export default function CommentairesClients() {
           height={30}
         />
       </h2>
-      <article className="relative my-8 flex flex-row h-72">
+      <article className="relative my-8 flex flex-row h-80 w-full">
         {/* Slide précédent */}
         <div
           onClick={handlePagePrecedante}
-          className="z-10 absolute flex h-16  -translate-y-1/2 top-1/2 left-0 text-2xl font-semibold  rounded-r-lg overflow-hidden bg-primary/10  hover:shadow-tertinary  hover:shadow-md"
+          className="z-10 absolute bg-primary/10 flex items-center justify-center tablette:w-12 h-full text-2xl font-semibold -translate-y-1/2 top-1/2 -left-4 rounded-l-lg overflow-hidden"
         >
-          <span className="flex hover:bg-tertinary/50 hover:border-tertinary py-1 transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer  ">
+          <span className="flex py-1  transition-transform hover:-translate-x-1 motion-reduce:transform-none cursor-pointer">
             <Image
-              className="mx-4 w-auto h-auto"
+              className="tablette:size-8 hover:size-12"
               alt="Slide à droite"
               src="/logo/circle-chevron-left-solid.svg"
               width={40}
@@ -91,28 +90,28 @@ export default function CommentairesClients() {
         {commentairesClients.map((commentaireClient, index) => (
           <div
             key={commentaireClient.index}
-            className={`absolute borderShadow  w-full py-3 px-8 bg-secondary flex flex-col justify-center items-center h-full scale-75 rounded-lg transition-opacity duration-500 ${
+            className={`absolute  top-1/2 -translate-y-1/2 w-full  flex flex-col justify-center items-center scale-75 rounded-lg transition-opacity duration-500 ${
               page === index + 1
                 ? 'opacity-100'
                 : 'opacity-0 pointer-events-none'
             }`}
           >
-            <p className="text-2xl mobile:text-base  font-bold w-full text-start text-black">
+            <p className=" w-full bg-secondary borderShadow tablette:text-lg text-2xl mobile:text-base m-4 p-8 font-bold text-start text-black">
               {commentaireClient.commentaire}
+              <span className="bottom-2  flex w-full justify-center text-lg mobile:text-sm tracking-widest py-6 font-titleFont text-black font-bold ">
+                {`${commentaireClient.name} - ${commentaireClient.poste}`}
+              </span>
             </p>
-            <span className="flex w-full justify-end text-lg mobile:text-sm tracking-widest py-6 font-titleFont text-black font-bold ">
-              {`${commentaireClient.name} - ${commentaireClient.poste}`}
-            </span>
           </div>
         ))}
         {/* Slide suivant */}
         <div
           onClick={handlePageSuivante}
-          className="z-10 absolute bg-primary/10 flex h-16 -translate-y-1/2 top-1/2 right-0 text-2xl font-semibold  rounded-l-lg overflow-hidden hover:shadow-tertinary  hover:shadow-md"
+          className="z-10 absolute bg-primary/10 flex items-center justify-center tablette:w-12 h-full -translate-y-1/2 top-1/2 -right-4 text-2xl font-semibold rounded-l-lg overflow-hidden"
         >
-          <span className="flex hover:bg-tertinary/50 py-1  hover:border-tertinary  transition-transform hover:-translate-x-1 motion-reduce:transform-none cursor-pointer  ">
+          <span className="flex  py-1   transition-transform hover:-translate-x-1 motion-reduce:transform-none cursor-pointer">
             <Image
-              className="mx-4 w-auto h-auto"
+              className="tablette:size-8"
               alt="slide à gauche"
               src="/logo/circle-chevron-right-solid.svg"
               width={40}

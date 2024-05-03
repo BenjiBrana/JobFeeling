@@ -62,7 +62,7 @@
 }
 
 .sectionPage {
-  @apply flex flex-col w-full h-full px-16 mobile:px-0 bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark;
+  @apply flex flex-col w-full h-full px-16 mobile:px-0 bg-background dark:bg-backgroundDark text-textColor dark:text-textColorDark scale-90 hover:scale-95;
 }
 
 .titleSectionPage {
