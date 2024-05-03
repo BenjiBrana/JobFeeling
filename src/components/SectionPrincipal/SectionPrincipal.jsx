@@ -23,7 +23,7 @@ export default function ImgPrincipal() {
           /images/imgPrincipaleLarge.webp 1800w"
           sizes="(max-width: 630px) 630, 1024px,
             1800px"
-          src="/images/imgPrincipale.webp"
+          src="/images/imgPrincipaleMini.webp"
           alt="Image principal"
           title="Image de présentation"
           priority
