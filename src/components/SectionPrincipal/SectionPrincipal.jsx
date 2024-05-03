@@ -26,8 +26,8 @@ export default function ImgPrincipal() {
           height={900}
         />
         <h1 className="elementPrincipal flex flex-col w-1/3 tablette:w-1/2 mobile:w-3/4  py-2 px-6 bottom-2/4 -translate-y-16 bg-background/70 dark:bg-backgroundDark/70 text-3xl mobile:text-2xl  text-center font-bold">
-          <span className="tablette:flex tablette:flex-col tablette:justify-center">
-            <strong>JobFeeling</strong>
+          <span className="tablette:flex tablette:flex-col tablette:justify-center font-bold text-4xl pb-4">
+            JobFeeling
           </span>
           <span className="text-2xl tablette:text-lg">
             Trouverez le job qui éveillera votre passion
@@ -102,7 +102,7 @@ export default function ImgPrincipal() {
       <section className="flex flex-col  w-full px-20 tablette:mx-4 scale-95 hover:scale-100 bg-background dark:bg-backgroundDark ">
         <h2 className="h2Style">
           Bienvenue sur votre passerelle vers une carrière
-          épanouissante, la plateforme de recrutement en ligne de
+          épanouissante, votre plateforme de recrutement en ligne de
           confiance.
         </h2>
         <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
