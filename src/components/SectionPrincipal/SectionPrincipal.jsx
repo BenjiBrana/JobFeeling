@@ -18,6 +18,10 @@ export default function ImgPrincipal() {
       <section className="relative w-full h-auto text-textColor dark:text-textColorDark rounded-b-lg border-b shadow shadow-backgroundDark">
         <Image
           className="w-full h-screen tablette:h-128 object-cover"
+          srcset="/images/imgPrincipale.webp 1024w,
+          /images/imgPrincipaleLarge.webp 1800w"
+          sizes="(max-width: 1024px) 1024px,
+            1800px"
           src="/images/imgPrincipale.webp"
           alt="Image principal"
           title="Image de présentation"
@@ -25,6 +29,7 @@ export default function ImgPrincipal() {
           width={1440}
           height={900}
         />
+
         <h1 className="elementPrincipal flex flex-col w-1/3 tablette:w-1/2 mobile:w-3/4  py-2 px-6 bottom-2/4 -translate-y-16 bg-background/70 dark:bg-backgroundDark/70 text-3xl mobile:text-2xl  text-center font-bold">
           <span className="tablette:flex tablette:flex-col tablette:justify-center font-bold text-4xl pb-4">
             JobFeeling
