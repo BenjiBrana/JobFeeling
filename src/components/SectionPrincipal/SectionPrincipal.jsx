@@ -19,10 +19,8 @@ export default function ImgPrincipal() {
         <Image
           className="w-full h-screen tablette:h-128 object-cover"
           srcset="/images/imgPrincipaleMini.webp 630w,
-          /images/imgPrincipale.webp 1024w,
-          /images/imgPrincipaleLarge.webp 1800w"
-          sizes="(max-width: 630px) 630, 1024px,
-            1800px"
+          /images/imgPrincipale.webp 1024w"
+          sizes="(max-width: 630px) 1024px"
           src="/images/imgPrincipaleMini.webp"
           alt="Image principal"
           title="Image de présentation"
