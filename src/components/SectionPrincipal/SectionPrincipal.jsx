@@ -101,8 +101,9 @@ export default function ImgPrincipal() {
       </section>
       <section className="flex flex-col  w-full px-20 tablette:mx-4 scale-95 hover:scale-100 bg-background dark:bg-backgroundDark ">
         <h2 className="h2Style">
-          Bienvenue sur JobFeeling, votre plateforme de recrutement en
-          ligne de confiance.
+          Bienvenue sur votre passerelle vers une carrière
+          épanouissante, la plateforme de recrutement en ligne de
+          confiance.
         </h2>
         <p className="text-lg text-textColor dark:text-textColorDark mobile:text-base 2xl:leading-10 xl:leading-8 pb-8 ">
           Chez JobFeeling, nous croyons que chaque individu mérite de
