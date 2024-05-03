@@ -40,7 +40,7 @@ export default function Footer() {
     bg-secondary dark:bg-secondaryDark text-textColor dark:text-textColorDark border-t border-borderColor dark:border-borderColorDark px-20 flex flex-col xl:flex-row items-center xl:items-start justify-between p-5 mt-8 gap-8 xl:gap-0"
     >
       <div class="flex flex-col items-center gap-4 justify-center tablette:order-4">
-        <h2 className="font-bold text-2xl">JobFeeling</h2>
+        <span className="font-bold text-2xl">JobFeeling</span>
         <Image
           id="logoFooter"
           className=" border shadow shadow-backgroundDark hover:border-2 rounded-full"
