@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import SectionPrincipal from '@/components/SectionPrincipal/SectionPrincipal';
 import ArticleAccueil from '@/components/ArticleAccueil/ArticleAccueil';
+import CommentairesClients from '@/components/CommentairesClients/CommentairesClients';
 import Footer from '@/components/Footer/Footer';
 
 export default function Page({ children }) {
@@ -37,6 +38,7 @@ export default function Page({ children }) {
       <section className="w-full flex flex-col min-h-screen justify-between">
         <SectionPrincipal />
         <ArticleAccueil />
+        <CommentairesClients />
         {children}
       </section>
       <Footer />
