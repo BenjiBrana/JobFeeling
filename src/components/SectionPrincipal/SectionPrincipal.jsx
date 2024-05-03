@@ -18,15 +18,16 @@ export default function ImgPrincipal() {
       <section className="relative w-full h-auto text-textColor dark:text-textColorDark rounded-b-lg border-b shadow shadow-backgroundDark">
         <Image
           className="w-full h-screen tablette:h-128 object-cover"
-          srcset="/images/imgPrincipale.webp 1024w,
+          srcset="/images/imgPrincipaleMini.webp 630w,
+          /images/imgPrincipale.webp 1024w,
           /images/imgPrincipaleLarge.webp 1800w"
-          sizes="(max-width: 1024px) 1024px,
+          sizes="(max-width: 630px) 630, 1024px,
             1800px"
           src="/images/imgPrincipale.webp"
           alt="Image principal"
           title="Image de présentation"
           priority
-          width={1440}
+          width={1024}
           height={900}
         />
 
